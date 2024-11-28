@@ -7,7 +7,18 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "480px",
+      md: "800px",
+      lg: "1280px",
+      xl: "1440px",
+    },
     extend: {
+      fontFamily: {
+        gobold: ['var(--font-gobold)'],
+        aeonik: ['var(--font-aeonik)'],
+        aeoniklight: ['var(--font-aeoniklight)'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

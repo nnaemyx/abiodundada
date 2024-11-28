@@ -1,101 +1,196 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
+import AnimatedText from "@/utils/AnimatedText";
+type AnimatedNumbersProps = {
+  value: number;
+  className?: string;
+};
+
+const AnimatedNumbers: React.FC<AnimatedNumbersProps> = ({
+  value,
+  className = "",
+}) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue, { duration: 3000 });
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (isInView) motionValue.set(value);
+  }, [isInView, motionValue, value]);
+
+  useEffect(() => {
+    const unsubscribe = springValue.on("change", (latest) => {
+      if (ref.current) {
+        ref.current.textContent = Math.min(latest, value).toFixed(0);
+      }
+    });
+    return () => unsubscribe();
+  }, [springValue, value]);
+
+  return (
+    <span
+      ref={ref}
+      className={` ${className}`} // Example TailwindCSS styles
+    ></span>
+  );
+};
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="">
+      <div className="w-full max-w-[839px] mx-auto">
+        <div className="mt-[90px] text-center">
+          <AnimatedText
+            text="YOUR LEGAL PARTNERS IN "
+            className="font-bold text-black text-[48px] max-w-full mx-auto leading-[56px]"
+          />
+          <AnimatedText
+            text="JUSTICE AND RESOLUTION "
+            className="font-bold text-black text-[48px] max-w-full mx-auto leading-[56px]"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <p className="font-aeoniklight tracking-[-1%] max-w-[651px] mx-auto text-[#595959] leading-[27px] mt-[16px] text-center font-[400] text-[18px]">
+          With a steadfast dedication to integrity and client-centered advocacy,
+          we provide the support and counsel you need to navigate today’s legal
+          landscape.
+        </p>
+        <button className="rounded-[12px] bg-black text-white py-[14.5px] px-[28px] font-aeonik leading-[19.2px] mx-auto justify-center flex mt-[24px]">
+          Get expert legal advice
+        </button>
+      </div>
+
+      <section className="py-[100px] w-full lg:px-[68px]">
+        <div className="flex gap-[16px]">
+          <div>
+            <Image
+              src="https://res.cloudinary.com/mmainspire/image/upload/v1732664442/abiodun/sppwpoun0gfybpoglz9r.png"
+              alt="founder picture"
+              width={560}
+              height={750}
+            />
+          </div>
+          <div className="flex flex-col gap-[16px]">
+            <div className="flex gap-[16px]">
+              <Image
+                src="https://res.cloudinary.com/mmainspire/image/upload/v1732664447/abiodun/iuxmtcbkztu30i9vqjmk.png"
+                alt="founder picture"
+                width={232}
+                height={367}
+              />
+              <Image
+                src="https://res.cloudinary.com/mmainspire/image/upload/v1732664414/abiodun/ouggroaoennoljb2j3b1.png"
+                alt="founder picture"
+                width={232}
+                height={367}
+              />
+              <Image
+                src="https://res.cloudinary.com/mmainspire/image/upload/v1732664471/abiodun/bu1hmtpjc5vmjco4ozhe.png"
+                alt="founder picture"
+                width={232}
+                height={367}
+              />
+            </div>
+            <div className="flex gap-[16px]">
+              <Image
+                src="https://res.cloudinary.com/mmainspire/image/upload/v1732664433/abiodun/qsfnsiyv3rk5jxmwnroq.png"
+                alt="founder picture"
+                width={232}
+                height={367}
+              />
+              <Image
+                src="https://res.cloudinary.com/mmainspire/image/upload/v1732664426/abiodun/v75fogue9uyk5mphqkqa.png"
+                alt="founder picture"
+                width={232}
+                height={367}
+              />
+              <Image
+                src="https://res.cloudinary.com/mmainspire/image/upload/v1732664475/abiodun/a6gvhn0qbfjxzywrmlqj.png"
+                alt="founder picture"
+                width={232}
+                height={367}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-[100px] lg:px-[68px]">
+        <div className="flex justify-between items-center">
+          <div>
+            <h2 className="capitalize max-w-[451px] text-[#222723] font-gobold text-[56px] leading-[78.4px]">
+              BUILT ON TRUST, PROVEN BY RESULTS
+            </h2>
+          </div>
+
+          <div className="flex">
+            <div className="text-right">
+              <AnimatedNumbers
+                value={20}
+                className="text-[#222723] font-gobold text-[56px] leading-[72.24px]"
+              />
+              <span className="text-[#222723] font-gobold text-[56px] leading-[72.24px]">
+                +
+              </span>
+              <p className="text-[#595959] font-aeoniklight text-[18px] mt-[10px] tracking-[-1%] leading-[21.6px]">
+                Years of experience
+              </p>
+            </div>
+
+            <div className="ml-[68px] text-right">
+              <AnimatedNumbers
+                value={8}
+                className="text-[#222723] font-gobold text-[56px] leading-[72.24px]"
+              />
+              <span className="text-[#222723] font-gobold text-[56px] leading-[72.24px]">
+                +
+              </span>
+              <p className="text-[#595959] font-aeoniklight text-[18px] mt-[10px] tracking-[-1%] leading-[21.6px]">
+                Practicing lawyers
+              </p>
+            </div>
+
+            <div className="ml-[58px] text-right">
+              <AnimatedNumbers
+                value={1000}
+                className="text-[#222723] font-gobold text-[56px] leading-[72.24px]"
+              />
+              <span className="text-[#222723] font-gobold text-[56px] leading-[72.24px]">
+                +
+              </span>
+              <p className="text-[#595959] font-aeoniklight text-[18px] mt-[10px] tracking-[-1%] leading-[21.6px]">
+                Matters and transactions
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-white font-gobold text-[56px] leading-[78.4px] max-w-[471px]">
+            Welcome to Abiodun Dada & Co.
+          </h2>
+        </div>
+        <div className="mt-[48px]">
+          <p className="text-white font-aeonik text-[28px] leading-[44.8px] tracking-[-0.5%]">
+            At Abiodun Dada & Co., we’re not just legal practitioners—we’re
+            dedicated advocates, strategic partners, and meticulous advisors
+            committed to safeguarding your interests. Founded on principles of
+            integrity, diligence, and innovation, we offer unparalleled legal
+            expertise across diverse practice areas, from commercial arbitration
+            to civil and criminal litigation. Our team combines a wealth of
+            experience with a client-centered approach, ensuring that each case
+            receives our undivided attention and highest standards of
+            professionalism.
+          </p>
+          <p className="mt-[40px] text-white font-aeonik text-[28px] leading-[44.8px] tracking-[-0.5%]">
+            With a presence in key locations throughout Nigeria, including
+            Ilorin, Lagos, and Abuja, our firm is equipped to handle complex
+            legal challenges, adapt to an evolving landscape, and deliver
+            solutions that serve your unique needs. We invite you to learn more
+            about our team’s history, values, and track record of success.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
