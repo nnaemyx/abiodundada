@@ -18,6 +18,7 @@ export default {
         gobold: ['var(--font-gobold)'],
         aeonik: ['var(--font-aeonik)'],
         aeoniklight: ['var(--font-aeoniklight)'],
+        aeonikmedium: ['var(--font-aeonikmedium)'],
       },
       colors: {
         background: "var(--background)",

@@ -4,7 +4,7 @@ import {DirectionRight} from "react-huge-icons/solid"
 
 const Navbar = () => {
   return (
-    <div className="px-[68px] py-[24px] flex justify-between items-center">
+    <div className="px-[68px] py-[24px] w-full flex justify-between items-center">
       <div>
         <Image
           src="https://res.cloudinary.com/mmainspire/image/upload/v1732664482/abiodun/cgivsxxwf8qcl5wcfmos.png"
@@ -14,7 +14,7 @@ const Navbar = () => {
         />
       </div>
       <nav>
-        <ul className="flex gap-[32px] font-aeonik text-[15px] font-medium text-[#747474] ">
+        <ul className="flex gap-[22px] font-aeonik text-[15px] xl:ml-[10rem] font-medium text-[#747474] ">
           <li className="leading-[18px]">Home</li>
           <li className="leading-[18px]">About Us</li>
           <li className="leading-[18px]">The Team</li>
