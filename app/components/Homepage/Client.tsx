@@ -28,11 +28,11 @@ const Client = () => {
       whileInView="visible"
       transition={{ duration: 0.8 }}
       variants={scrollAnimation}
-      className="flex items-center justify-between"
+      className="flex lg:flex-row flex-col md:items-center justify-between"
     >
       {/* Section Header */}
-      <div className="text-center mb-6">
-        <h2 className="font-gobold text-[56px] leading-[78.4px]">
+      <div className="md:text-center mb-6">
+        <h2 className="font-gobold md:text-[56px] md:leading-[78.4px] text-[32px] leading-[44.8px]">
           Client Portfolio
         </h2>
       </div>
@@ -44,7 +44,7 @@ const Client = () => {
             {/* Dot */}
             <span className="w-2 h-2 bg-[#2F2F2F] rounded-full flex-shrink-0"></span>
             {/* Client Name */}
-            <p className="text-[18px] text-[#2F2F2F] font-aeoniklight">
+            <p className="text-[18px] leading-[28.8px] tracking-[-0.5%] text-[#2F2F2F] font-aeoniklight">
               {client}
             </p>
           </div>

@@ -23,24 +23,34 @@ const Advocacy = () => {
   };
   return (
     <div>
-      <div className="flex gap-[68px]">
+      <div className="flex lg:flex-row flex-col gap-[68px] md:px-[68px] px-[16px] ">
         <motion.div
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.8 }}
           variants={scrollAnimation}
         >
-          <div className="max-w-[461px]">
-            <h2 className="text-[#F5F5F5] text-[56px] font-gobold leading-[78.4px]">
+          <div className="lg:max-w-[461px] lg:text-left text-center">
+            <h2 className="text-[#F5F5F5] md:text-[56px] text-[32px] font-gobold leading-[44.8px] md:leading-[78.4px] w-[239px] md:w-auto mx-auto">
               THE MINDS BEHIND YOUR ADVOCACY
             </h2>
-            <p className="text-[#ACACAC] mt-[12px] text-[18px] leading-[27px] font-aeoniklight tracking-[-1%]">
+            <p className="text-[#ACACAC] mt-[24px] lg:mt-[12px] text-[18px] leading-[27px] font-aeoniklight tracking-[-1%]">
               Get to know the experienced professionals committed to guiding you
               through every step with care and expertise.
             </p>
           </div>
 
-          <div className="max-w-[707px] mt-[104px]">
+          <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8 }}
+          variants={scrollAnimation}
+          className="lg:hidden block mt-[60px] mx-auto"
+        >
+          <Image src={CEOimage} alt="CEO's picture"  />
+        </motion.div>
+
+          <div className="max-w-[707px] mt-[104px] ">
             <h2 className="text-[#F5F5F5] text-[26px] font-aeonilkmedium leading-[31.2px] tracking-[-3%]">
               Meet Chief Ebenezer Abiodun Dada, Esq., MCIArb(UK)
             </h2>
@@ -68,8 +78,8 @@ const Advocacy = () => {
             </p>
           </div>
 
-          <div className="mt-[48px]">
-            <button className="bg-white rounded-[12px] py-[14.5px] px-[36px] text-black font-aeonikmedium leading-[19.2px]">
+          <div className="mt-[48px] ">
+            <button className="bg-white rounded-[12px] w-full md:w-auto py-[14.5px] px-[36px] text-black font-aeonikmedium leading-[19.2px]">
               Know more about the CEO
             </button>
           </div>
@@ -79,20 +89,21 @@ const Advocacy = () => {
           whileInView="visible"
           transition={{ duration: 0.8 }}
           variants={scrollAnimation}
+          className="hidden lg:block"
         >
           <Image src={CEOimage} alt="CEO's picture" width={529} height={793} />
         </motion.div>
       </div>
 
       <motion.div
-        className="mt-[120px]"
+        className="mt-[120px] md:px-[68px] px-[16px] "
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.8 }}
         variants={scrollAnimation}
       >
-        <div className="flex lg:flex-row flex-col gap-[28px]">
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px]">
+        <div className="flex md:flex-row flex-col justify-center mx-auto gap-[28px]">
+          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Babajide}
@@ -110,7 +121,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px]">
+          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Samuel}
@@ -128,7 +139,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px]">
+          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image src={Femi} alt="babajide image" width={400} height={400} />
             </div>
@@ -143,8 +154,8 @@ const Advocacy = () => {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col gap-[28px] mt-[64px]">
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px]">
+        <div className="flex md:flex-row flex-col gap-[28px] mt-[64px]">
+          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Grace}
@@ -162,7 +173,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px]">
+          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Zeenat}
@@ -180,7 +191,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px]">
+          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Damilola}
@@ -200,8 +211,8 @@ const Advocacy = () => {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col gap-[28px] mt-[64px]">
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px]">
+        <div className="flex md:flex-row flex-col gap-[28px] mt-[64px]">
+          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Mumminat}
@@ -219,7 +230,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px]">
+          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Folakemi}
@@ -237,7 +248,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px]">
+          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Esther}
@@ -257,8 +268,8 @@ const Advocacy = () => {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col gap-[28px] mx-auto justify-center mt-[64px]">
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px]">
+        <div className="flex md:flex-row flex-col gap-[28px] mx-auto justify-center mt-[64px]">
+          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Nafui}
@@ -276,7 +287,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px]">
+          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Lawal}
