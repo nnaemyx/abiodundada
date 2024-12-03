@@ -28,7 +28,7 @@ const aeonikmedium = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Abiodundada",
+  title: "Abiodundada&co",
   description: "ABIODUN DADA & CO. is a composite firm of Legal Practitioners",
 };
 
