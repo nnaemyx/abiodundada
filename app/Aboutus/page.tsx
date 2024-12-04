@@ -68,7 +68,7 @@ const page = () => {
         <Image
           src={AboutHero}
           alt="firm image"
-          className="min-w-[393px] w-full mx-auto"
+          className="max-w-[393px] w-full mx-auto"
         />
       </motion.div>
 
@@ -148,7 +148,7 @@ const page = () => {
           <Image
             src={InsideAbout}
             alt="about abiodun image"
-            className="min-w-[393px] w-full mx-auto"
+            className="max-w-[393px] w-full mx-auto"
           />
         </div>
         <div className="mt-[40px] mx-auto hidden lg:block">
