@@ -82,7 +82,7 @@ export default function Home() {
           we provide the support and counsel you need to navigate today’s legal
           landscape.
         </p>
-        <button className="rounded-[12px] w-full xl:w-auto bg-black text-white py-[14.5px] px-[28px] font-aeonikmedium leading-[19.2px] mx-auto justify-center flex mt-[24px]">
+        <button className="rounded-[12px] w-full lg:w-auto bg-black text-white py-[14.5px] px-[28px] font-aeonikmedium leading-[19.2px] mx-auto justify-center flex mt-[24px]">
           Get expert legal advice
         </button>
       </motion.div>
@@ -249,7 +249,7 @@ export default function Home() {
           variants={scrollAnimation}
           className="mt-[80px]"
         >
-          <Image src={Aboutus} alt="company photo" />
+          <Image src={Aboutus} alt="company photo" className="w-full" />
           <div className="self-start mt-[60px] px-[16px] md:hidden block">
             <button className="bg-white w-full text-[#141414] leading-[19.2px] px-[36px] py-[14.5px] rounded-[8px] font-aeonikmedium">
               Read more about us
@@ -412,7 +412,7 @@ export default function Home() {
             variants={scrollAnimation}
             className="lg:max-w-[502px] pt-[80px] md:pt-0 md:px-0 px-[16px]"
           >
-            <h2 className="md:text-[56px] text-[32px] w-[361px] mx-auto md:w-auto text-center md:text-left text-[#F5F5F5] leading-[44.8px] md:leading-[72.8px] font-gobold">
+            <h2 className="md:text-[56px] text-[32px]  mx-auto md:w-auto text-center md:text-left text-[#F5F5F5] leading-[44.8px] md:leading-[72.8px] font-gobold">
               YOUR LEGAL SOLUTION STARTS HERE
             </h2>
             <p className="mt-[16px] text-[#DCDCDC] text-center md:text-left font-aeoniklight text-[18px] leading-[28.8px] tracking-[-3%]">
@@ -440,7 +440,7 @@ export default function Home() {
             variants={scrollAnimation}
             className="lg:hidden block"
           >
-            <Image src={MobileCTO} alt="cto image" width={393} height={539} />
+            <Image src={MobileCTO} alt="cto image" className="w-full mx-auto" />
           </motion.div>
 
           <div className="w-full pb-[80px] lg:hidden block md:pb-0 md:px-0 px-[16px]">
