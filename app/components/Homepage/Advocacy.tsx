@@ -103,7 +103,7 @@ const Advocacy = () => {
         variants={scrollAnimation}
       >
         <div className="flex md:flex-row flex-col justify-center mx-auto gap-[28px]">
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Babajide}
@@ -121,7 +121,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Samuel}
@@ -139,7 +139,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image src={Femi} alt="babajide image" width={400} height={400} />
             </div>
@@ -155,7 +155,7 @@ const Advocacy = () => {
         </div>
 
         <div className="flex md:flex-row flex-col gap-[28px] mt-[64px]">
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Grace}
@@ -173,7 +173,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Zeenat}
@@ -191,7 +191,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Damilola}
@@ -212,7 +212,7 @@ const Advocacy = () => {
         </div>
 
         <div className="flex md:flex-row flex-col gap-[28px] mt-[64px]">
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Mumminat}
@@ -230,7 +230,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Folakemi}
@@ -248,7 +248,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Esther}
@@ -269,7 +269,7 @@ const Advocacy = () => {
         </div>
 
         <div className="flex md:flex-row flex-col gap-[28px] mx-auto justify-center mt-[64px]">
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Nafui}
@@ -287,7 +287,7 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Lawal}
