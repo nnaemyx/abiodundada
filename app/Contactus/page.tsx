@@ -136,7 +136,7 @@ const Page = () => {
             <h2 className="text-[#2F2F2F] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-1%]">
               Call us
             </h2>
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center">
               <p className="text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
                 08035763940
               </p>
@@ -146,7 +146,7 @@ const Page = () => {
               </div>
               <button className="bg-black rounded-[12px] text-white py-[12.5px] px-[24px] font-aeonikmedium leading-[19.2px] hidden lg:flex">Copy number</button>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center">
               <p className=" text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
                 08055559749
               </p>
