@@ -15,6 +15,7 @@ import Folakemi from "../../images/Frame 2087328176-7.png";
 import Esther from "../../images/Frame 2087328176-10.png";
 import Nafui from "../../images/Frame 2087328176-6.png";
 import Lawal from "../../images/Frame 2087328176-8.png";
+import Link from "next/link";
 
 const Advocacy = () => {
   const scrollAnimation = {
@@ -41,14 +42,14 @@ const Advocacy = () => {
           </div>
 
           <motion.div
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.8 }}
-          variants={scrollAnimation}
-          className="lg:hidden block mt-[60px] mx-auto"
-        >
-          <Image src={CEOimage} alt="CEO's picture"  />
-        </motion.div>
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.8 }}
+            variants={scrollAnimation}
+            className="lg:hidden block mt-[60px] mx-auto"
+          >
+            <Image src={CEOimage} alt="CEO's picture" />
+          </motion.div>
 
           <div className="max-w-[707px] mt-[104px] ">
             <h2 className="text-[#F5F5F5] text-[26px] font-aeonilkmedium leading-[31.2px] tracking-[-3%]">
@@ -77,12 +78,13 @@ const Advocacy = () => {
               who rely on his counsel and guidance.
             </p>
           </div>
-
-          <div className="mt-[48px] ">
-            <button className="bg-white rounded-[12px] w-full md:w-auto py-[14.5px] px-[36px] text-black font-aeonikmedium leading-[19.2px]">
-              Know more about the CEO
-            </button>
-          </div>
+          <Link href="/Team">
+            <div className="mt-[48px] ">
+              <button className="bg-white rounded-[12px] w-full md:w-auto py-[14.5px] px-[36px] text-black font-aeonikmedium leading-[19.2px]">
+                Know more about the CEO
+              </button>
+            </div>
+          </Link>
         </motion.div>
         <motion.div
           initial="hidden"

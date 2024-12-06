@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Logo from "../images/White logo.png";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -37,9 +38,21 @@ const Footer = () => {
             </div>
             <div className="text-[#F2F2F2] mt-[20px] lg:mt-[40px] lg:ml-[159px] font-aeoniklight text-[14px] lg:text-[16px]">
               <ul className="space-y-[16px] lg:space-y-[24px] leading-[19.2px]">
-                <li>About Us</li>
-                <li>The Team</li>
-                <li>Client Portfolio</li>
+                <Link href="/Aboutus">
+                  <div className="mt-[16px] lg:mt-[24px]">
+                    <li>About Us</li>
+                  </div>
+                </Link>
+                <Link href="/Team">
+                  <div className="mt-[16px] lg:mt-[24px]">
+                    <li>The Team</li>
+                  </div>
+                </Link>
+                <Link href="/Contactus">
+                  <div className="mt-[16px] lg:mt-[24px]">
+                    <li>Contact Us</li>
+                  </div>
+                </Link>
               </ul>
             </div>
           </div>

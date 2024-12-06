@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <div className="lg:px-[68px] px-[20px] lg:py-[24px] py-[13px] w-full flex justify-between items-center bg-white sticky top-0 z-50 shadow-md">
+      <div className="lg:px-[68px] px-[20px] lg:py-[24px] py-[13px] w-full flex justify-between items-center bg-white sticky top-0 z-50 shadow-sm">
         {/* Logo */}
         <div>
           <Link href="/">
@@ -51,8 +51,8 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex">
-          <ul className="flex gap-[22px] font-aeonik text-[15px] font-medium text-[#747474]">
+        <nav className="hidden lg:flex ml-[10rem]">
+          <ul className="flex gap-[32px] font-aeonik text-[15px] font-medium text-[#747474]">
             {navItems.map((item) => (
               <li
                 key={item.name}
@@ -69,12 +69,14 @@ const Navbar = () => {
         </nav>
 
         {/* CTA */}
-        <div className="hidden lg:flex items-center gap-[6px]">
-          <p className="text-[#141414] font-aeonik leading-[19.2px]">
-            Schedule Your Consultation
-          </p>
-          <DirectionRight className="size-[20px] text-[#141414]" />
-        </div>
+        <Link href="/Contactus">
+          <div className="hidden lg:flex items-center gap-[6px]">
+            <p className="text-[#141414] font-aeonik leading-[19.2px]">
+              Schedule Your Consultation
+            </p>
+            <DirectionRight className="size-[20px] text-[#141414]" />
+          </div>
+        </Link>
 
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden block" onClick={toggleMobileNav}>
@@ -97,7 +99,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {isMobileNavOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-white z-50">
-          <div className="flex justify-between items-center shadow-md px-[20px] py-[13px]">
+          <div className="flex justify-between items-center shadow-sm px-[20px] py-[13px]">
             <Link href="/">
               <Image
                 src="https://res.cloudinary.com/mmainspire/image/upload/v1732664482/abiodun/cgivsxxwf8qcl5wcfmos.png"
@@ -114,7 +116,10 @@ const Navbar = () => {
           <nav className="mt-[52px] px-[16px]">
             <ul className="space-y-[33px] font-aeoniklight text-[#2F2F2F] leadng-[26.4px] text-[22px]">
               {navItems.map((item) => (
-                <li key={item.name} className="flex justify-between items-center">
+                <li
+                  key={item.name}
+                  className="flex justify-between items-center"
+                >
                   <Link
                     href={item.path}
                     onClick={toggleMobileNav} // Close menu on click
@@ -131,11 +136,13 @@ const Navbar = () => {
               ))}
             </ul>
           </nav>
-          <div className="absolute bottom-10 mt-[222px] left-0 w-full px-[20px]">
-            <button className="w-full bg-black rounded-[12px] py-[16.5px] text-white font-aeonikmedium leading-[19.2px]">
-              Schedule your consultation
-            </button>
-          </div>
+          <Link href="/Contactus" onClick={toggleMobileNav}>
+            <div className="absolute bottom-10 mt-[222px] left-0 w-full px-[20px]">
+              <button className="w-full bg-black rounded-[12px] py-[16.5px] text-white font-aeonikmedium leading-[19.2px]">
+                Schedule your consultation
+              </button>
+            </div>
+          </Link>
         </div>
       )}
     </>

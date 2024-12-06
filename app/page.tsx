@@ -17,6 +17,7 @@ import Damilola from "./images/Frame 2087328347-1.png";
 import Advocacy from "./components/Homepage/Advocacy";
 import Client from "./components/Homepage/Client";
 import ContactForm from "./components/Homepage/ContactForm";
+import Link from "next/link";
 
 type AnimatedNumbersProps = {
   value: number;
@@ -82,9 +83,11 @@ export default function Home() {
           we provide the support and counsel you need to navigate today’s legal
           landscape.
         </p>
-        <button className="rounded-[12px] w-full lg:w-auto bg-black text-white py-[14.5px] px-[28px] font-aeonikmedium leading-[19.2px] mx-auto justify-center flex mt-[24px]">
-          Get expert legal advice
-        </button>
+        <Link href="/Contactus">
+          <button className="rounded-[12px] w-full lg:w-auto bg-black text-white py-[14.5px] px-[28px] font-aeonikmedium leading-[19.2px] mx-auto justify-center flex mt-[24px]">
+            Get expert legal advice
+          </button>
+        </Link>
       </motion.div>
 
       <motion.div
@@ -107,32 +110,36 @@ export default function Home() {
           </div>
 
           {/* Grid of Smaller Images */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-[16px] w-full">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-[16px]">
             <Image
               src={Babajide}
               alt="founder picture"
-              className="w-full h-auto"
+              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
             />
             <Image
               src={Zeenat}
               alt="founder picture"
-              className="w-full h-auto"
+              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
             />
-            <Image src={Femi} alt="founder picture" className="w-full h-auto" />
+            <Image
+              src={Femi}
+              alt="founder picture"
+              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
+            />
             <Image
               src={Grace}
               alt="founder picture"
-              className="w-full h-auto"
+              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
             />
             <Image
               src={Samuel}
               alt="founder picture"
-              className="w-full h-auto"
+              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
             />
             <Image
               src={Damilola}
               alt="founder picture"
-              className="w-full h-auto"
+              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
             />
           </div>
         </motion.div>
@@ -235,11 +242,13 @@ export default function Home() {
               success.
             </p>
           </div>
-          <div className="self-start mt-[40px] hidden md:block">
-            <button className="bg-white text-[#141414] leading-[19.2px] px-[36px] py-[14.5px] rounded-[8px] font-aeonikmedium">
-              Read more about us
-            </button>
-          </div>
+          <Link href="/Aboutus">
+            <div className="self-start mt-[40px] hidden md:block">
+              <button className="bg-white text-[#141414] leading-[19.2px] px-[36px] py-[14.5px] rounded-[8px] font-aeonikmedium">
+                Read more about us
+              </button>
+            </div>
+          </Link>
         </motion.div>
 
         <motion.div
@@ -250,11 +259,13 @@ export default function Home() {
           className="mt-[80px]"
         >
           <Image src={Aboutus} alt="company photo" className="w-full" />
-          <div className="self-start mt-[60px] px-[16px] md:hidden block">
-            <button className="bg-white w-full text-[#141414] leading-[19.2px] px-[36px] py-[14.5px] rounded-[8px] font-aeonikmedium">
-              Read more about us
-            </button>
-          </div>
+          <Link href="/Aboutus">
+            <div className="self-start mt-[60px] px-[16px] md:hidden block">
+              <button className="bg-white w-full text-[#141414] leading-[19.2px] px-[36px] py-[14.5px] rounded-[8px] font-aeonikmedium">
+                Read more about us
+              </button>
+            </div>
+          </Link>
         </motion.div>
       </section>
 
@@ -389,11 +400,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-[72px] mx-auto text-center">
-            <button className="bg-[#141414] w-full md:w-auto rounded-[12px] px-[36px] py-[14.5px] font-aeonikmedium leading-[19.2px] tracking-[-1%] text-white mx-auto">
-              Get a quote
-            </button>
-          </div>
+          <Link href="/Contactus">
+            <div className="mt-[72px] mx-auto text-center">
+              <button className="bg-[#141414] w-full md:w-auto rounded-[12px] px-[36px] py-[14.5px] font-aeonikmedium leading-[19.2px] tracking-[-1%] text-white mx-auto">
+                Get a quote
+              </button>
+            </div>
+          </Link>
         </div>
       </motion.div>
 
@@ -419,9 +432,11 @@ export default function Home() {
               Ready to take decisive action? Let our experienced team guide you
               to the resolution you deserve.
             </p>
-            <button className="bg-white hidden lg:block rounded-[12px] mt-[24px] py-[14.5px] px-[36px] text-[#141414] font-aeonikmedium leading-[19.2px]">
-              Let&apos;s Discuss our Case
-            </button>
+            <Link href="/Contactus">
+              <button className="bg-white hidden lg:block rounded-[12px] mt-[24px] py-[14.5px] px-[36px] text-[#141414] font-aeonikmedium leading-[19.2px]">
+                Let&apos;s Discuss our Case
+              </button>
+            </Link>
           </motion.div>
           <motion.div
             initial="hidden"
