@@ -71,14 +71,14 @@ export default function Home() {
         <div className="lg:mt-[90px] mt-[60px] text-center">
           <AnimatedText
             text="YOUR LEGAL PARTNERS IN "
-            className="font-bold text-black md:text-[76px] text-[30px] max-w-full mx-auto leading-[54px] md:leading-[106.4px]"
+            className="font-bold text-black md:text-[76px] lg:text-[66px] lg:leading-[86.4px] text-[30px] max-w-full mx-auto leading-[54px] md:leading-[106.4px]"
           />
           <AnimatedText
             text="JUSTICE AND RESOLUTION "
-            className="font-bold text-black md:text-[76px] text-[30px] max-w-full mx-auto leading-[54px] md:leading-[106.4px]"
+            className="font-bold text-black md:text-[76px] lg:text-[66px] lg:leading-[86.4px] text-[30px] max-w-full mx-auto leading-[54px] md:leading-[106.4px]"
           />
         </div>
-        <p className="font-aeoniklight tracking-[-3%] lg:tracking-[-1%] lg:max-w-[651px] mx-auto text-[#595959] leading-[28.8px] lg:leading-[27px] mt-[16px] text-center font-[400] lg:text-[18px]">
+        <p className="font-aeoniklight tracking-[-3%] lg:tracking-[-1%] lg:max-w-[591px] mx-auto text-[#595959] leading-[28.8px] lg:leading-[27px] mt-[16px] text-center font-[400] lg:text-[16px]">
           With a steadfast dedication to integrity and client-centered advocacy,
           we provide the support and counsel you need to navigate today’s legal
           landscape.
@@ -102,11 +102,11 @@ export default function Home() {
           whileInView="visible"
           transition={{ duration: 0.8 }}
           variants={scrollAnimation}
-          className="flex flex-col xl:flex-row gap-4 justify-center lg:gap-[16px] items-center lg:items-start"
+          className="flex flex-col lg:flex-row gap-4 justify-center lg:gap-[16px] items-center lg:items-start"
         >
           {/* CEO Image */}
-          <div className="flex-shrink-0 w-full lg:w-auto max-w-[560px]">
-            <Image src={CEO} alt="founder picture" className="w-full h-auto" />
+          <div className="">
+            <Image src={CEO} alt="founder picture" className="w-full lg:max-w-[560px] lg:h-[750px] h-auto" />
           </div>
 
           {/* Grid of Smaller Images */}
@@ -152,9 +152,9 @@ export default function Home() {
         variants={scrollAnimation}
         className="py-[100px] w-full px-[16px] md:px-[68px]"
       >
-        <div className="flex lg:flex-row flex-col xl:justify-between xl:items-center">
+        <div className="flex lg:flex-row flex-col lg:justify-between lg:items-center xl:justify-between xl:items-center">
           <div>
-            <h2 className="capitalize lg:max-w-[451px] text-[#222723] font-gobold text-[32px] md:text-[56px] leading-[44.8px] md:leading-[78.4px]">
+            <h2 className="capitalize lg:max-w-[351px] text-[#222723] font-gobold text-[32px] lg:text-[44px] lg:leading-[68.4px] md:text-[56px] leading-[44.8px] md:leading-[78.4px]">
               BUILT ON TRUST, PROVEN BY RESULTS
             </h2>
           </div>
@@ -163,12 +163,12 @@ export default function Home() {
             <div className="md:text-right">
               <AnimatedNumbers
                 value={20}
-                className="text-[#222723] font-gobold text-[44px] md:text-[56px] leading-[61.6px] md:leading-[72.24px]"
+                className="text-[#222723] font-gobold text-[44px] lg:text-[36px] md:text-[56px] leading-[61.6px] lg:leading-[52.24px] md:leading-[72.24px]"
               />
-              <span className="text-[#222723] font-gobold text-[44px] md:text-[56px] leading-[61.6px] md:leading-[72.24px]">
+              <span className="text-[#222723] font-gobold text-[44px] lg:text-[36px] md:text-[56px] leading-[61.6px] lg:leading-[52.24px] md:leading-[72.24px]">
                 +
               </span>
-              <p className="text-[#595959] font-aeoniklight md:text-[18px] mt-[10px] tracking-[-1%] leading-[21.6px]">
+              <p className="text-[#595959] font-aeoniklight lg:text-[16px] md:text-[18px] mt-[10px] tracking-[-1%] leading-[21.6px]">
                 Years of experience
               </p>
             </div>
@@ -176,12 +176,12 @@ export default function Home() {
             <div className="sm:ml-[68px] md:text-right">
               <AnimatedNumbers
                 value={8}
-                className="text-[#222723] font-gobold text-[44px] md:text-[56px] leading-[61.6px] md:leading-[72.24px]"
+                className="text-[#222723] font-gobold text-[44px] lg:text-[36px] md:text-[56px] leading-[61.6px] lg:leading-[52.24px] md:leading-[72.24px]"
               />
-              <span className="text-[#222723] font-gobold text-[44px] md:text-[56px] leading-[61.6px] md:leading-[72.24px]">
+              <span className="text-[#222723] font-gobold text-[44px] lg:text-[36px] md:text-[56px] leading-[61.6px] lg:leading-[52.24px] md:leading-[72.24px]">
                 +
               </span>
-              <p className="text-[#595959] font-aeoniklight md:text-[18px] mt-[10px] tracking-[-1%] leading-[21.6px]">
+              <p className="text-[#595959] font-aeoniklight md:text-[18px] lg:text-[16px] mt-[10px] tracking-[-1%] leading-[21.6px]">
                 Practicing lawyers
               </p>
             </div>
@@ -189,12 +189,12 @@ export default function Home() {
             <div className="sm:ml-[58px] md:text-right">
               <AnimatedNumbers
                 value={1000}
-                className="text-[#222723] font-gobold text-[44px] md:text-[56px] leading-[61.6px] md:leading-[72.24px]"
+                className="text-[#222723] font-gobold text-[44px] lg:text-[36px] md:text-[56px] leading-[61.6px] lg:leading-[52.24px] md:leading-[72.24px]"
               />
-              <span className="text-[#222723] font-gobold text-[44px] md:text-[56px] leading-[61.6px] md:leading-[72.24px]">
+              <span className="text-[#222723] font-gobold text-[44px] lg:text-[36px] md:text-[56px] leading-[61.6px] md:leading-[72.24px] lg:leading-[52.24px]">
                 +
               </span>
-              <p className="text-[#595959] font-aeoniklight md:text-[18px] mt-[10px] tracking-[-1%] leading-[21.6px]">
+              <p className="text-[#595959] font-aeoniklight md:text-[18px] lg:text-[16px] mt-[10px] tracking-[-1%] leading-[21.6px]">
                 Matters and transactions
               </p>
             </div>
@@ -209,7 +209,7 @@ export default function Home() {
           variants={scrollAnimation}
           className="px-[16px] "
         >
-          <h2 className="text-white font-gobold text-[32px] sm:text-[56px] leading-[44.8px] sm:leading-[78.4px] max-w-[471px]">
+          <h2 className="text-white font-gobold text-[32px] sm:text-[36px] leading-[44.8px] sm:leading-[58.4px] max-w-[301px]">
             Welcome to Abiodun Dada & Co.
           </h2>
         </motion.div>
@@ -222,7 +222,7 @@ export default function Home() {
           className="mt-[48px] max-w-[815px] px-[16px] flex flex-col ml-auto"
         >
           <div className="mr-[40px]">
-            <p className="text-white font-aeoniklight sm:text-[28px] leading-[28.8px] text-[18px] sm:leading-[44.8px] tracking-[-3%] sm:tracking-[-0.5%]">
+            <p className="text-white font-aeoniklight sm:text-[18px] leading-[28.8px] text-[18px] sm:leading-[34.8px] tracking-[-3%] sm:tracking-[-0.5%]">
               At Abiodun Dada & Co., we’re not just legal practitioners—we’re
               dedicated advocates, strategic partners, and meticulous advisors
               committed to safeguarding your interests. Founded on principles of
@@ -233,7 +233,7 @@ export default function Home() {
               that each case receives our undivided attention and highest
               standards of professionalism.
             </p>
-            <p className="mt-[40px] text-white font-aeoniklight sm:text-[28px] leading-[28.8px] text-[18px] sm:leading-[44.8px] tracking-[-3%] sm:tracking-[-0.5%]">
+            <p className="mt-[40px] text-white font-aeoniklight sm:text-[18px] leading-[28.8px] text-[18px] sm:leading-[34.8px] tracking-[-3%] sm:tracking-[-0.5%]">
               With a presence in key locations throughout Nigeria, including
               Ilorin, Lagos, and Abuja, our firm is equipped to handle complex
               legal challenges, adapt to an evolving landscape, and deliver
@@ -276,14 +276,14 @@ export default function Home() {
         variants={scrollAnimation}
         className="md:py-[100px] py-[80px] px-[16px] md:px-[68px]"
       >
-        <div className="flex lg:flex-row flex-col justify-between">
-          <div className="max-w-[691px]">
-            <h2 className="font-gobold text-[32px] md:text-[56px] leading-[44.8px] md:leading-[78.4px]">
+        <div className="flex lg:flex-row lg:items-center flex-col justify-between">
+          <div className="max-w-[491px]">
+            <h2 className="font-gobold text-[32px] md:text-[36px] leading-[44.8px] md:leading-[58.4px]">
               Comprehensive Expertise Across Diverse Legal Fields
             </h2>
           </div>
 
-          <div className="max-w-[453px] xl:mt-0 mt-[24px] md:mt-[24px]">
+          <div className="max-w-[453px] xl:mt-0 mt-[24px] lg:mt-0 md:mt-[24px]">
             <p className="font-aeoniklight text-[18px] text-[#595959] leading-[27px] md:leading-[28.8px] tracking-[-1%]">
               Our firm offers specialized legal solutions across a wide range of
               practice areas, providing the experience and insight you need to
@@ -403,7 +403,7 @@ export default function Home() {
           <Link href="/Contactus">
             <div className="mt-[72px] mx-auto text-center">
               <button className="bg-[#141414] w-full md:w-auto rounded-[12px] px-[36px] py-[14.5px] font-aeonikmedium leading-[19.2px] tracking-[-1%] text-white mx-auto">
-                Get a quote
+                Schedule a call
               </button>
             </div>
           </Link>
@@ -423,9 +423,9 @@ export default function Home() {
             whileInView="visible"
             transition={{ duration: 0.8 }}
             variants={scrollAnimation}
-            className="lg:max-w-[502px] pt-[80px] md:pt-0 md:px-0 px-[16px]"
+            className="lg:max-w-[402px] pt-[80px] md:pt-0 md:px-0 px-[16px]"
           >
-            <h2 className="md:text-[56px] text-[32px]  mx-auto md:w-auto text-center md:text-left text-[#F5F5F5] leading-[44.8px] md:leading-[72.8px] font-gobold">
+            <h2 className="md:text-[36px] text-[32px]  mx-auto md:w-auto text-center md:text-left text-[#F5F5F5] leading-[44.8px] md:leading-[52.8px] font-gobold">
               YOUR LEGAL SOLUTION STARTS HERE
             </h2>
             <p className="mt-[16px] text-[#DCDCDC] text-center md:text-left font-aeoniklight text-[18px] leading-[28.8px] tracking-[-3%]">

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { DirectionRight, RemoveThin, ArrowRight } from "react-huge-icons/solid";
+import {  RemoveThin, ArrowRight } from "react-huge-icons/solid";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -36,22 +36,22 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <div className="lg:px-[68px] px-[20px] lg:py-[24px] py-[13px] w-full flex justify-between items-center bg-white sticky top-0 z-50 shadow-sm">
+      <div className="lg:px-[68px] px-[20px] lg:py-[24px] py-[13px] w-full flex justify-between lg:justify-center items-center gap-[16px] bg-white sticky top-0 z-50 shadow-sm">
         {/* Logo */}
-        <div>
+        <div className="rounded-full border border-solid py-[13px] px-[21px]">
           <Link href="/">
             <Image
               src="https://res.cloudinary.com/mmainspire/image/upload/v1732664482/abiodun/cgivsxxwf8qcl5wcfmos.png"
               alt="logo"
-              width={38.91}
-              height={62}
-              className="lg:w-[38.91px] lg:h-[62px] w-[26.36px] h-[42px]"
+              width={26.15}
+              height={42}
+              className="lg:w-[26.15px] lg:h-[42px] w-[26.36px] h-[42px]"
             />
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex ml-[10rem]">
+        <nav className="hidden lg:flex items-center gap-[40px] pl-[24px] pr-[10px] py-[10px] border border-solid rounded-[1000px]">
           <ul className="flex gap-[32px] font-aeonik text-[15px] font-medium text-[#747474]">
             {navItems.map((item) => (
               <li
@@ -66,17 +66,15 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          {/* CTA */}
+          <Link href="/Contactus">
+            <div className="hidden lg:flex items-center py-[14.5px] px-[28px] rounded-[1000px] bg-black text-white">
+              <p className="text-white font-aeonikmedium leading-[19.2px]">
+                Schedule a call
+              </p>
+            </div>
+          </Link>
         </nav>
-
-        {/* CTA */}
-        <Link href="/Contactus">
-          <div className="hidden lg:flex items-center gap-[6px]">
-            <p className="text-[#141414] font-aeonik leading-[19.2px]">
-              Schedule Your Consultation
-            </p>
-            <DirectionRight className="size-[20px] text-[#141414]" />
-          </div>
-        </Link>
 
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden block" onClick={toggleMobileNav}>

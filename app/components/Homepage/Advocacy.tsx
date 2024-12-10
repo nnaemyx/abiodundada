@@ -31,9 +31,12 @@ const Advocacy = () => {
           transition={{ duration: 0.8 }}
           variants={scrollAnimation}
         >
-          <div className="lg:max-w-[461px] lg:text-left text-center">
-            <h2 className="text-[#F5F5F5] md:text-[56px] text-[32px] font-gobold leading-[44.8px] md:leading-[78.4px] w-[239px] md:w-auto mx-auto">
-              THE MINDS BEHIND YOUR ADVOCACY
+          <div className="lg:max-w-[451px] lg:text-left text-center">
+            <h2 className="text-[#F5F5F5] md:text-[36px] text-[32px] font-gobold leading-[44.8px] md:leading-[58.4px] w-[239px] md:w-auto mx-auto">
+              THE MINDS BEHIND
+            </h2>
+            <h2 className="text-[#F5F5F5] md:text-[36px] text-[32px] font-gobold leading-[44.8px] md:leading-[58.4px] w-[239px] md:w-auto mx-auto">
+               YOUR ADVOCACY
             </h2>
             <p className="text-[#ACACAC] mt-[24px] lg:mt-[12px] text-[18px] leading-[27px] font-aeoniklight tracking-[-1%]">
               Get to know the experienced professionals committed to guiding you
@@ -286,6 +289,24 @@ const Advocacy = () => {
               </h2>
               <p className="text-[#ACACAC] mt-[8px] font-aeoniklight text-[18px] leading-[21.6px] tracking-[-1%]">
                 IT Manager
+              </p>
+            </div>
+          </div>
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+            <div className="px-[8px] pt-[8px]">
+              <Image
+                src={Lawal}
+                alt="babajide image"
+                width={400}
+                height={400}
+              />
+            </div>
+            <div className="mt-[22px] pl-[20px] pb-[20px]">
+              <h2 className="text-[#F5F5F5] font-aeonikmedium text-[20px] leading-[24px] tracking-[-3%]">
+                Lawal AbdulWahab Abiodun
+              </h2>
+              <p className="text-[#ACACAC] mt-[8px] font-aeoniklight text-[18px] leading-[21.6px] tracking-[-1%]">
+                Office Assistant
               </p>
             </div>
           </div>
