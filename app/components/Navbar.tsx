@@ -5,11 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import {  RemoveThin, ArrowRight } from "react-huge-icons/solid";
+import { RemoveThin, ArrowRight } from "react-huge-icons/solid";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -26,6 +27,18 @@ const Navbar = () => {
     };
   }, [isMobileNavOpen]);
 
+  // Track scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Adjust threshold as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/Aboutus" },
@@ -36,9 +49,17 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <div className="lg:px-[68px] px-[20px] lg:py-[24px] py-[13px] w-full flex justify-between lg:justify-center items-center gap-[16px] bg-white sticky top-0 z-50 shadow-sm">
+      <div
+        className={`lg:px-[68px] px-[20px] lg:py-[24px] py-[13px] w-full flex justify-between lg:justify-center items-center gap-[16px] sticky top-0 z-50 shadow-sm transition-colors duration-300 ${
+          isScrolled ? "bg-transparent" : "bg-white"
+        }`}
+      >
         {/* Logo */}
-        <div className="rounded-full border border-solid py-[13px] px-[21px]">
+        <div
+          className={`rounded-full border border-solid py-[13px] px-[21px] ${
+            isScrolled ? "bg-white" : ""
+          }`}
+        >
           <Link href="/">
             <Image
               src="https://res.cloudinary.com/mmainspire/image/upload/v1732664482/abiodun/cgivsxxwf8qcl5wcfmos.png"
@@ -51,8 +72,12 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-[40px] pl-[24px] pr-[10px] py-[10px] border border-solid rounded-[1000px]">
-          <ul className="flex gap-[32px] font-aeonik text-[15px] font-medium text-[#747474]">
+        <nav
+          className={`hidden lg:flex items-center gap-[40px] pl-[24px] pr-[10px] py-[10px] border border-solid rounded-[1000px] ${
+            isScrolled ? "bg-white" : ""
+          }`}
+        >
+          <ul className="flex gap-[32px] font-aeonik text-[14px] font-medium text-[#747474]">
             {navItems.map((item) => (
               <li
                 key={item.name}
@@ -77,7 +102,17 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile Menu Toggle */}
-        <div className="lg:hidden block" onClick={toggleMobileNav}>
+        <div
+          className={`lg:hidden flex items-center gap-[20px] py-[10px] pl-[10px] pr-[24px] rounded-full border border-solid ${isScrolled ? "bg-white" : ""}` }
+          onClick={toggleMobileNav}
+        >
+          <Link href="/Contactus">
+            <div className="items-center py-[14.5px] px-[28px] rounded-[1000px] bg-black text-white">
+              <p className="text-white font-aeonikmedium leading-[19.2px]">
+                Schedule a call
+              </p>
+            </div>
+          </Link>
           {isMobileNavOpen ? (
             <RemoveThin className="size-[24px]" />
           ) : (
@@ -98,39 +133,41 @@ const Navbar = () => {
       {isMobileNavOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-white z-50">
           <div className="flex justify-between items-center shadow-sm px-[20px] py-[13px]">
-            <Link href="/">
-              <Image
-                src="https://res.cloudinary.com/mmainspire/image/upload/v1732664482/abiodun/cgivsxxwf8qcl5wcfmos.png"
-                alt="logo"
-                width={26.36}
-                height={42}
-                className="w-[26.36px] h-[42px]"
-              />
-            </Link>
-            <div onClick={toggleMobileNav}>
+            <div className="rounded-full border border-solid py-[13px] px-[21px]">
+              <Link href="/">
+                <Image
+                  src="https://res.cloudinary.com/mmainspire/image/upload/v1732664482/abiodun/cgivsxxwf8qcl5wcfmos.png"
+                  alt="logo"
+                  width={26.15}
+                  height={42}
+                  className="lg:w-[26.15px] lg:h-[42px] w-[26.36px] h-[42px]"
+                />
+              </Link>
+            </div>
+            <div
+              onClick={toggleMobileNav}
+              className="rounded-full p-[24px] border border-solid"
+            >
               <RemoveThin className="size-[24px]" />
             </div>
           </div>
-          <nav className="mt-[52px] px-[16px]">
-            <ul className="space-y-[33px] font-aeoniklight text-[#2F2F2F] leadng-[26.4px] text-[22px]">
+          <nav className="mt-[22px] px-[16px]">
+            <ul className="font-aeoniklight text-[#2F2F2F] leadng-[26.4px] text-[22px]">
               {navItems.map((item) => (
-                <li
-                  key={item.name}
-                  className="flex justify-between items-center"
-                >
-                  <Link
-                    href={item.path}
-                    onClick={toggleMobileNav} // Close menu on click
-                  >
-                    <span>{item.name}</span>
-                  </Link>
-                  <Link
-                    href={item.path}
-                    onClick={toggleMobileNav} // Close menu on click
-                  >
-                    <ArrowRight className="size-[22px]" />
-                  </Link>
-                </li>
+                <Link key={item.name} href={item.path}>
+                  <li className="flex justify-between items-center mt-[33px]">
+                    <div
+                      onClick={toggleMobileNav} // Close menu on click
+                    >
+                      <span>{item.name}</span>
+                    </div>
+                    <div
+                      onClick={toggleMobileNav} // Close menu on click
+                    >
+                      <ArrowRight className="size-[22px]" />
+                    </div>
+                  </li>
+                </Link>
               ))}
             </ul>
           </nav>

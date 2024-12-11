@@ -119,10 +119,10 @@ const Page = () => {
       className="mt-[60px] lg:px-[120px]"
     >
       <motion.div className="" variants={fadeIn}>
-        <h2 className="pl-[16px] lg:pl-0 font-gobold text-[36px] lg:text-[64px] lg:leading-[83.2px] leading-[46.44px] ">
+        <h2 className="pl-[16px] lg:pl-0 font-gobold text-[36px] lg:text-[44px] lg:leading-[83.2px] leading-[46.44px] ">
           OUR TEAM OF ADVOCATES
         </h2>
-        <p className="px-[16px] lg:px-0 mt-[20px] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-3%]">
+        <p className="px-[16px] lg:px-0 mt-[20px] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-3%]">
           Our strength lies in our team of skilled and dedicated professionals.
           Abiodun Dada & Co. comprises experienced legal practitioners,
           computer-literate secretaries, litigation clerks, librarians,
@@ -139,7 +139,7 @@ const Page = () => {
         </div>
       </motion.div>
       <div className="mt-[80px]">
-        <h2 className="px-[16px] lg:px-0 font-gobold text-[32px] lg:text-[56px] lg:leading-[72.24px]  leading-[48px] w-[361px] lg:w-auto">
+        <h2 className="px-[16px] lg:px-0 font-gobold text-[32px] lg:text-[36px] lg:leading-[72.24px]  leading-[48px] w-[361px] lg:w-auto">
           FOUNDER & HEAD OF PRACTICE
         </h2>
         <div className="mt-[40px]">
@@ -163,11 +163,11 @@ const Page = () => {
           </p>
         </div>
         <div className="mt-[32px] px-[16px] lg:px-0 flex flex-col lg:flex-row lg:gap-[84px]">
-          <h2 className="text-[#9F9F9F] text-[20px] lg:w-[480px]  leading-[26px] font-gobold tracking-[-4%]">
+          <h2 className="text-[#9F9F9F] text-[20px] lg:text-[18px] lg:w-[490px]  leading-[26px] font-gobold tracking-[-4%]">
             ABOUT CEO
           </h2>
           <div>
-            <div className="mt-[20px] lg:mt-0 space-y-[20px]   text-[#2F2F2F] font-aeoniklight leading-[28.8px] text-[18px] tracking-[-0.5%]">
+            <div className="mt-[20px] lg:mt-0 space-y-[20px]   text-[#2F2F2F] font-aeoniklight leading-[28.8px] text-[16px] tracking-[-0.5%]">
               <p>
                 Chief Ebenezer Abiodun Dada, Esq., MCIArb(UK), is the esteemed
                 founder and Head of Practice at Abiodun Dada & Co., a leading
@@ -223,7 +223,7 @@ const Page = () => {
             </div>
             <div className="lg:flex hidden w-full gap-[165px] mt-[60px]">
               <div className="">
-                <h2 className="text-[#9F9F9F] w-[126px] lg:w-auto text-[20px] leading-[28px] font-gobold tracking-[-4%]">
+                <h2 className="text-[#9F9F9F] w-[126px] lg:w-auto text-[18px] leading-[28px] font-gobold tracking-[-4%]">
                   AWARDS AND RECOGNITIONS
                 </h2>
                 <div className="mt-[36px] space-y-[24px]">
@@ -237,7 +237,7 @@ const Page = () => {
                       <p className="leading-[19.2px] text-[#2F2F2F] tracking-[-0.5%] font-aeoniklight">
                         {item.organization}
                       </p>
-                      <h2 className="text-[#212121] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-0.5%]">
+                      <h2 className="text-[#212121] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-0.5%]">
                         {item.award}
                       </h2>
                     </motion.div>
@@ -246,7 +246,7 @@ const Page = () => {
               </div>
 
               <div className="">
-                <h2 className="text-[#9F9F9F] w-[126px] lg:w-auto text-[20px] leading-[28px] font-gobold tracking-[-4%]">
+                <h2 className="text-[#9F9F9F] w-[126px] lg:w-auto text-[18px] leading-[28px] font-gobold tracking-[-4%]">
                   AWARDS AND RECOGNITIONS
                 </h2>
                 <div className="mt-[36px] space-y-[24px]">
@@ -260,7 +260,7 @@ const Page = () => {
                       <p className="leading-[19.2px] text-[#2F2F2F] tracking-[-0.5%] font-aeoniklight">
                         {item.organization}
                       </p>
-                      <h2 className="text-[#212121] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-0.5%]">
+                      <h2 className="text-[#212121] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-0.5%]">
                         {item.award}
                       </h2>
                     </motion.div>
@@ -271,7 +271,7 @@ const Page = () => {
           </div>
         </div>
         <div className="mt-[40px] lg:hidden px-[16px]">
-          <h2 className="text-[#9F9F9F] w-[126px] text-[20px] leading-[28px] font-gobold tracking-[-4%]">
+          <h2 className="text-[#9F9F9F] w-[126px] text-[18px] leading-[28px] font-gobold tracking-[-4%]">
             AWARDS AND RECOGNITIONS
           </h2>
           <div className="mt-[36px] space-y-[24px]">
@@ -285,7 +285,7 @@ const Page = () => {
                 <p className="leading-[19.2px] text-[#2F2F2F] tracking-[-0.5%] font-aeoniklight">
                   {item.organization}
                 </p>
-                <h2 className="text-[#212121] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-0.5%]">
+                <h2 className="text-[#212121] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-0.5%]">
                   {item.award}
                 </h2>
               </motion.div>
@@ -294,7 +294,7 @@ const Page = () => {
         </div>
 
         <div className="mt-[40px] lg:hidden px-[16px]">
-          <h2 className="text-[#9F9F9F] w-[126px] text-[20px] leading-[28px] font-gobold tracking-[-4%]">
+          <h2 className="text-[#9F9F9F] w-[126px] text-[18px] leading-[28px] font-gobold tracking-[-4%]">
             AWARDS AND RECOGNITIONS
           </h2>
           <div className="mt-[36px] space-y-[24px]">
@@ -308,7 +308,7 @@ const Page = () => {
                 <p className="leading-[19.2px] text-[#2F2F2F] tracking-[-0.5%] font-aeoniklight">
                   {item.organization}
                 </p>
-                <h2 className="text-[#212121] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-0.5%]">
+                <h2 className="text-[#212121] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-0.5%]">
                   {item.award}
                 </h2>
               </motion.div>
@@ -317,7 +317,7 @@ const Page = () => {
         </div>
 
         <div className="mt-[100px] lg:mt-[120px]">
-          <h2 className="font-gobold text-[32px] lg:text-[56px] lg:leading-[72.24px] leading-[41.28px] lg:px-0 px-[16px]">
+          <h2 className="font-gobold text-[32px] lg:text-[36px] lg:leading-[72.24px] leading-[41.28px] lg:px-0 px-[16px]">
             HEAD OF CHAMBERS
           </h2>
           <div className="flex flex-col">
@@ -335,7 +335,7 @@ const Page = () => {
             </div>
             <div className="px-[16px] lg:px-0 mt-[20px]">
               <div className="lg:hidden">
-                <h2 className="text-[#1A1A1A] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-2%]">
+                <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
                   BABAJIDE OMOKORE, ESQ.
                 </h2>
                 <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
@@ -343,7 +343,7 @@ const Page = () => {
                 </p>
               </div>
               <div className="mt-[32px]">
-                <p className="text-[#2F2F2F] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-0.5%]">
+                <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
                   BABAJIDE OMOKORE, ESQ., attended the University of Jos from
                   2005 to 2009, where he earned his Bachelor of Laws degree. To
                   fulfill the requirements for practicing as a Barrister and
@@ -369,12 +369,12 @@ const Page = () => {
                 <Image
                   src={Samuel}
                   alt="Samuel's image"
-                  className="lg:rounded-[12px] lg:w-[400px] lg:h-[406px]"
+                  className="lg:rounded-[12px] "
                 />
               </div>
-              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[760px]">
+              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
                 <div>
-                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-2%]">
+                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
                     SAMUEL IYANU OLA, ESQ.
                   </h2>
                   <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
@@ -382,7 +382,7 @@ const Page = () => {
                   </p>
                 </div>
                 <div className="mt-[32px]">
-                  <p className="text-[#2F2F2F] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-0.5%]">
+                  <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
                     SAMUEL IYANU OLA, ESQ., attended the University of Ilorin
                     from 2010 to 2015, where he completed his Bachelor of Laws
                     (LL.B.) degree. To meet the requirements for legal practice
@@ -401,12 +401,12 @@ const Page = () => {
                 <Image
                   src={Grace}
                   alt="Samuel's image"
-                  className="lg:rounded-[12px] lg:w-[400px] lg:h-[406px]"
+                  className="lg:rounded-[12px] "
                 />
               </div>
-              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[760px]">
+              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
                 <div>
-                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-2%]">
+                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
                     ADEBAYO, GRACE OLUWAFUNMIBI, ESQ.
                   </h2>
                   <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
@@ -414,7 +414,7 @@ const Page = () => {
                   </p>
                 </div>
                 <div className="mt-[32px]">
-                  <p className="text-[#2F2F2F] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-0.5%]">
+                  <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
                     ADEBAYO, GRACE OLUWAFUNMIBI, ESQ., attended Ekiti State
                     University, Ado-Ekiti, from 2006 to 2012, where she earned
                     her Bachelor of Laws (LL.B.) degree. To fulfil the
@@ -435,19 +435,19 @@ const Page = () => {
                 <Image
                   src={Abdulrazaq}
                   alt="Abdulrazaq's image"
-                  className="lg:rounded-[12px] lg:w-[400px] lg:h-[406px]"
+                  className="lg:rounded-[12px] "
                 />
               </div>
-              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[760px]">
+              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
                 <div>
-                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-2%]">
+                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
                     PROF. ABDULRAZAQ O. ABDULKADIR, PhD
                   </h2>
                   <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
                     Advocate
                   </p>
                 </div>
-                <div className="mt-[32px] space-y-[20px] text-[#2F2F2F] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-0.5%]">
+                <div className="mt-[32px] space-y-[20px] text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
                   <p>
                     Prof. Abdulrazaq O. Abdulkadir, PhD, is a Barrister and
                     Solicitor of the Supreme Court of Nigeria. He graduated from
@@ -475,48 +475,17 @@ const Page = () => {
                 </div>
               </div>
             </div>
-
             <div className="flex flex-col lg:flex-row-reverse lg:gap-[40px] lg:items-center">
-              <div>
-                <Image
-                  src={Femi}
-                  alt="Femi's image"
-                  className="lg:rounded-[12px] lg:w-[400px] lg:h-[406px]"
-                />
-              </div>
-              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[760px]">
-                <div>
-                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-2%]">
-                    FEMI OLORUNFEMI SAMUEL SEGUN, ESQ.
-                  </h2>
-                  <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
-                    Advocate
-                  </p>
-                </div>
-                <div className="mt-[32px]">
-                  <p className="text-[#2F2F2F] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-0.5%]">
-                    FEMI OLORUNFEMI SAMUEL SEGUN, ESQ., attended the University
-                    of Ilorin from 2004 to 2008, where he earned his Bachelor of
-                    Laws degree. He then proceeded to the Nigerian Law School,
-                    Kano Campus, and was called to the Nigerian Bar in 2010. In
-                    2013, he completed his Master of Laws (LL.M) degree at the
-                    University of Ilorin.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row lg:gap-[40px] lg:items-center">
               <div>
                 <Image
                   src={Zeenat}
                   alt="Zeenat's image"
-                  className="lg:rounded-[12px] lg:w-[400px] lg:h-[406px]"
+                  className="lg:rounded-[12px] "
                 />
               </div>
-              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[760px]">
+              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
                 <div>
-                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-2%]">
+                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
                     ZEENAT ZAKARI, ESQ.
                   </h2>
                   <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
@@ -524,7 +493,7 @@ const Page = () => {
                   </p>
                 </div>
                 <div className="mt-[32px]">
-                  <p className="text-[#2F2F2F] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-0.5%]">
+                  <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
                     ZEENAT ZAKARI, ESQ., is a skilled and dedicated legal
                     practitioner who graduated from Bayero University, Kano,
                     with a Second Class Lower degree. She successfully completed
@@ -538,17 +507,49 @@ const Page = () => {
               </div>
             </div>
 
+            <div className="flex flex-col lg:flex-row lg:gap-[40px] lg:items-center">
+              <div>
+                <Image
+                  src={Femi}
+                  alt="Femi's image"
+                  className="lg:rounded-[12px] lg:max-w-[400px]"
+                />
+              </div>
+              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
+                <div>
+                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
+                    FEMI OLORUNFEMI SAMUEL SEGUN, ESQ.
+                  </h2>
+                  <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
+                    Advocate
+                  </p>
+                </div>
+                <div className="mt-[32px]">
+                  <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
+                    FEMI OLORUNFEMI SAMUEL SEGUN, ESQ., attended the University
+                    of Ilorin from 2004 to 2008, where he earned his Bachelor of
+                    Laws degree. He then proceeded to the Nigerian Law School,
+                    Kano Campus, and was called to the Nigerian Bar in 2010. In
+                    2013, he completed his Master of Laws (LL.M) degree at the
+                    University of Ilorin.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          
+
             <div className="flex flex-col lg:flex-row-reverse lg:gap-[40px] lg:items-center">
               <div>
                 <Image
                   src={Damilola}
                   alt="Damilola's image"
-                  className="lg:rounded-[12px] lg:w-[400px] lg:h-[406px]"
+                  className="lg:rounded-[12px]"
                 />
               </div>
-              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[760px]">
+              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
                 <div>
-                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-2%]">
+                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
                     DAMILOLA DORCAS OJO, ESQ.
                   </h2>
                   <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
@@ -556,7 +557,7 @@ const Page = () => {
                   </p>
                 </div>
                 <div className="mt-[32px]">
-                  <p className="text-[#2F2F2F] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-0.5%]">
+                  <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
                     DAMILOLA DORCAS 030, ESQ., attended Kogi State University,
                     Anyigba, Kogi State, from 2010 to 2014 for her Bachelor of
                     Laws (LL.B.) degree. To fulfil the requirements for legal

@@ -58,13 +58,13 @@ const Footer = () => {
           </div>
 
           {/* Contact Us */}
-          <div className="py-[40px] px-[16px] lg:px-0 lg:pr-[60px] border-b border-[#2F2F2F] w-full lg:max-w-[360px]">
+          <div className="py-[40px] px-[16px] lg:px-0 lg:pr-[50px] border-b border-[#2F2F2F] w-full lg:max-w-[360px]">
             <div className="lg:pl-[60px]">
               <p className="text-[#666666] font-aeoniklight leading-[19.2px]">
                 Contact Us
               </p>
             </div>
-            <div className="text-[#F2F2F2] mt-[20px] lg:mt-[40px] lg:ml-[154px] font-aeoniklight text-[14px] lg:text-[16px]">
+            <div className="text-[#F2F2F2] mt-[20px] lg:mt-[40px] lg:ml-[144px] font-aeoniklight text-[14px] lg:text-[16px]">
               <ul className="space-y-[16px] lg:space-y-[24px] leading-[19.2px]">
                 <li>Twitter/X</li>
                 <li>Instagram</li>

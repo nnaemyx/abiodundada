@@ -21,16 +21,16 @@ const Page = () => {
     >
       {/* Header Section */}
       <motion.div variants={fadeIn}>
-        <h2 className="font-gobold text-[36px] lg:text-[64px] lg:leading-[83.2px] leading-[44.6px]">CONTACT US</h2>
+        <h2 className="font-gobold text-[36px] lg:text-[44px] lg:leading-[83.2px] leading-[44.6px]">CONTACT US</h2>
       </motion.div>
 
       <div className="flex flex-col-reverse lg:flex-row mt-[40px] lg:gap-[60px] gap-[120px]">
         {/* Left Section */}
         <motion.div variants={fadeIn} className="lg:bg-[#F9FAFB] lg:border lg:border-solid lg:border-[#F2F2F2] lg:rounded-[12px] lg:p-[40px]">
-          <h2 className="text-[#2F2F2F] font-aeonikmedium text-[22px] leading-[26.4px] tracking-[-1%]">
+          <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] leading-[26.4px] tracking-[-1%]">
             Get in touch today
           </h2>
-          <p className="mt-[12px] text-[#595959] font-aeoniklight text-[18px] leading-[28.8px]">
+          <p className="mt-[12px] text-[#595959] font-aeoniklight text-[16px] leading-[28.8px]">
             We are committed to understanding your unique needs and offering
             tailored legal solutions.
           </p>
@@ -43,7 +43,7 @@ const Page = () => {
           >
             {/* Full Name Input */}
             <motion.div className="space-y-[12px]" variants={fadeIn}>
-              <label className="text-[#595959] font-aeonikmedium text-[18px] tracking-[-1%] leading-[21.6px]">
+              <label className="text-[#595959] font-aeonikmedium text-[16px] tracking-[-1%] leading-[21.6px]">
                 Full name
               </label>
               <input
@@ -54,7 +54,7 @@ const Page = () => {
             </motion.div>
             {/* Email Input */}
             <motion.div className="space-y-[12px]" variants={fadeIn}>
-              <label className="text-[#595959] font-aeonikmedium text-[18px] tracking-[-1%] leading-[21.6px]">
+              <label className="text-[#595959] font-aeonikmedium text-[16px] tracking-[-1%] leading-[21.6px]">
                 Email address
               </label>
               <input
@@ -65,7 +65,7 @@ const Page = () => {
             </motion.div>
             {/* Subject Input */}
             <motion.div className="space-y-[12px]" variants={fadeIn}>
-              <label className="text-[#595959] font-aeonikmedium text-[18px] tracking-[-1%] leading-[21.6px]">
+              <label className="text-[#595959] font-aeonikmedium text-[16px] tracking-[-1%] leading-[21.6px]">
                 Subject
               </label>
               <input
@@ -76,7 +76,7 @@ const Page = () => {
             </motion.div>
             {/* Message Input */}
             <motion.div className="space-y-[12px]" variants={fadeIn}>
-              <label className="text-[#595959] font-aeonikmedium text-[18px] tracking-[-1%] leading-[21.6px]">
+              <label className="text-[#595959] font-aeonikmedium text-[16px] tracking-[-1%] leading-[21.6px]">
                 Message
               </label>
               <textarea
@@ -97,20 +97,20 @@ const Page = () => {
         <motion.div variants={fadeIn}>
           {/* Head Office Details */}
           <div>
-            <h2 className="text-[#2F2F2F] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-1%]">
+            <h2 className="text-[#2F2F2F] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-1%]">
               Head Office
             </h2>
-            <p className="mt-[12px] text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
+            <p className="mt-[12px] text-[#595959] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-1%]">
               Temitope Chambers, Temitope House, No. 8, Venerable Adefila
               Street, Lajorin, G.R.A., Ilorin, Kwara State of Nigeria
             </p>
           </div>
           {/* Additional Sections */}
           <div className="mt-[48px]">
-            <h2 className="text-[#2F2F2F] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-1%]">
+            <h2 className="text-[#2F2F2F] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-1%]">
               Abuja Office
             </h2>
-            <p className="mt-[12px] text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
+            <p className="mt-[12px] text-[#595959] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-1%]">
               Suite 36 and 37, 2nd Floor, Yasuha Plaza (Behind AP Plaza) Plot
               1046, Adetokunbo Ademola Crescent, Wuse II, Abuja.
             </p>
@@ -118,26 +118,26 @@ const Page = () => {
 
           <div className="mt-[48px] flex justify-between items-center">
             <div>
-              <h2 className="text-[#2F2F2F] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-1%]">
+              <h2 className="text-[#2F2F2F] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-1%]">
                 Send us an email
               </h2>
-              <p className="mt-[12px] text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%] underline">
+              <p className="mt-[12px] text-[#595959] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-1%] underline">
                 lawtemitope@gmail.com
               </p>
             </div>
             <div>
-              <button className="rounded-[12px] bg-black text-white font-aeonikmedium leading-[19.2px] text-[16px] lg:px-[24px] lg:py-[12.5px] py-[10.5px] px-[16px]">
+              <button className="rounded-[12px] bg-black text-white font-aeonikmedium leading-[19.2px] text-[14px] lg:px-[24px] lg:py-[12.5px] py-[10.5px] px-[16px]">
                 Send a mail
               </button>
             </div>
           </div>
 
           <div className="mt-[48px] space-y-[16px]">
-            <h2 className="text-[#2F2F2F] font-aeonikmedium text-[18px] leading-[21.6px] tracking-[-1%]">
+            <h2 className="text-[#2F2F2F] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-1%]">
               Call us
             </h2>
             <div className="flex justify-between items-center">
-              <p className="text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
+              <p className="text-[#595959] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-1%]">
                 08035763940
               </p>
               <div className="rounded-[12px] lg:hidden bg-black text-white py-[11px] px-[16px] flex gap-[12px]">
@@ -147,7 +147,7 @@ const Page = () => {
               <button className="bg-black rounded-[12px] text-white py-[12.5px] px-[24px] font-aeonikmedium leading-[19.2px] hidden lg:flex">Copy number</button>
             </div>
             <div className="flex justify-between items-center">
-              <p className=" text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
+              <p className=" text-[#595959] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-1%]">
                 08055559749
               </p>
               <div className="rounded-[12px] bg-black lg:hidden text-white py-[11px] px-[16px] flex gap-[12px]">

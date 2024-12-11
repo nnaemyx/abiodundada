@@ -106,7 +106,7 @@ export default function Home() {
         >
           {/* CEO Image */}
           <div className="">
-            <Image src={CEO} alt="founder picture" className="w-full lg:max-w-[560px] lg:h-[750px] h-auto" />
+            <Image src={CEO} alt="founder picture" className="w-full lg:max-w-[560px] lg:h-[670px] h-auto" />
           </div>
 
           {/* Grid of Smaller Images */}
@@ -114,32 +114,32 @@ export default function Home() {
             <Image
               src={Babajide}
               alt="founder picture"
-              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
+              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
             />
             <Image
               src={Zeenat}
               alt="founder picture"
-              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
+              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
             />
             <Image
               src={Femi}
               alt="founder picture"
-              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
+              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
             />
             <Image
               src={Grace}
               alt="founder picture"
-              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
+              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
             />
             <Image
               src={Samuel}
               alt="founder picture"
-              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
+              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
             />
             <Image
               src={Damilola}
               alt="founder picture"
-              className="w-full h-auto lg:h-[367px] lg:max-w-[232px]"
+              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
             />
           </div>
         </motion.div>
@@ -284,7 +284,7 @@ export default function Home() {
           </div>
 
           <div className="max-w-[453px] xl:mt-0 mt-[24px] lg:mt-0 md:mt-[24px]">
-            <p className="font-aeoniklight text-[18px] text-[#595959] leading-[27px] md:leading-[28.8px] tracking-[-1%]">
+            <p className="font-aeoniklight text-[16px] text-[#595959] leading-[27px] md:leading-[28.8px] tracking-[-1%]">
               Our firm offers specialized legal solutions across a wide range of
               practice areas, providing the experience and insight you need to
               navigate complex challenges confidently.
@@ -302,10 +302,10 @@ export default function Home() {
                 height={52}
               />
               <div className="mt-[28px]">
-                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[22px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
+                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[20px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
                   Commercial Arbitration
                 </h2>
-                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
+                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-1%]">
                   We specialize in resolving business disputes outside of court,
                   we provide effective arbitration services to protect your
                   commercial interests.
@@ -320,10 +320,10 @@ export default function Home() {
                 height={52}
               />
               <div className="mt-[28px]">
-                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[22px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
+                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[20px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
                   Election Petition
                 </h2>
-                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
+                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-1%]">
                   Ensuring electoral justice by challenging and defending
                   election outcomes in pursuit of fairness and transparency.
                 </p>
@@ -337,10 +337,10 @@ export default function Home() {
                 height={52}
               />
               <div className="mt-[28px]">
-                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[22px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
+                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[20px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
                   Civil and Criminal Litigation
                 </h2>
-                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
+                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-1%]">
                   Representing clients in civil disputes and criminal cases,
                   delivering strong advocacy and defense across various legal
                   issues.
@@ -355,10 +355,10 @@ export default function Home() {
                 height={52}
               />
               <div className="mt-[28px]">
-                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[22px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
+                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[20px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
                   Maritime Law
                 </h2>
-                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
+                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-1%]">
                   Handling legal matters related to shipping, navigation, and
                   marine activities, including disputes over maritime commerce.
                 </p>
@@ -372,10 +372,10 @@ export default function Home() {
                 height={52}
               />
               <div className="mt-[28px]">
-                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[22px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
+                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[20px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
                   Taxation Law
                 </h2>
-                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
+                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-1%]">
                   Providing expert guidance on tax compliance, disputes, and
                   planning for businesses and individuals.
                 </p>
@@ -389,10 +389,10 @@ export default function Home() {
                 height={52}
               />
               <div className="mt-[28px]">
-                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[22px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
+                <h2 className="text-[#2F2F2F] font-aeonikmedium text-[20px] md:text-[20px] leading-[24px] md:leading-[26.4px] tracking-[-1%]">
                   Financial Law
                 </h2>
-                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[18px] leading-[28.8px] tracking-[-1%]">
+                <p className="mt-[12px] text-[#595959] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-1%]">
                   Advising on banking, investment, and financial transactions to
                   help clients navigate complex financial regulations securely.
                 </p>
@@ -428,7 +428,7 @@ export default function Home() {
             <h2 className="md:text-[36px] text-[32px]  mx-auto md:w-auto text-center md:text-left text-[#F5F5F5] leading-[44.8px] md:leading-[52.8px] font-gobold">
               YOUR LEGAL SOLUTION STARTS HERE
             </h2>
-            <p className="mt-[16px] text-[#DCDCDC] text-center md:text-left font-aeoniklight text-[18px] leading-[28.8px] tracking-[-3%]">
+            <p className="mt-[16px] text-[#DCDCDC] text-center md:text-left font-aeoniklight text-[16px] leading-[28.8px] tracking-[-3%]">
               Ready to take decisive action? Let our experienced team guide you
               to the resolution you deserve.
             </p>

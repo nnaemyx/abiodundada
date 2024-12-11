@@ -55,7 +55,7 @@ const page = () => {
         className="mt-[60px] lg:px-[120px] px-[16px]"
         variants={itemVariants}
       >
-        <p className="font-gobold text-[36px] lg:leading-[83.2px] lg:text-[64px] leading-[46.44px]">
+        <p className="font-gobold text-[36px] lg:leading-[83.2px] lg:text-[44px] leading-[46.44px]">
           FIRM PROFILE
         </p>
       </motion.div>
@@ -91,7 +91,7 @@ const page = () => {
         <h2 className="font-gobold lg:hidden block text-[#9F9F9F] text-[20px] leading-[26px] tracking-[-4%]">
           ABOUT US
         </h2>
-        <h2 className="font-gobold hidden lg:block text-[#9F9F9F] text-[20px] leading-[26px] tracking-[-4%]">
+        <h2 className="font-gobold hidden lg:block text-[#9F9F9F] text-[18px] leading-[26px] tracking-[-4%]">
           Introduction
         </h2>
         <motion.div
@@ -107,7 +107,7 @@ const page = () => {
           ].map((paragraph, index) => (
             <motion.p
               key={index}
-              className="font-aeoniklight text-[18px] leading-[28.8px] tracking-[-0.5%]"
+              className="font-aeoniklight text-[16px] leading-[26.8px] tracking-[-0.5%]"
               variants={itemVariants}
             >
               {paragraph}
@@ -117,7 +117,7 @@ const page = () => {
       </motion.div>
       <motion.div variants={itemVariants} className="mt-[100px] lg:mt-[126px] flex lg:flex-row flex-col px-[16px] md:px-[120px] lg:gap-[33px]">
         <div>
-          <h2 className="font-gobold text-[#9F9F9F] text-[20px] leading-[26px] tracking-[-4%]">
+          <h2 className="font-gobold text-[#9F9F9F] text-[18px] leading-[26px] tracking-[-4%]">
             CLIENT PORTFOLIO
           </h2>
           <p className="mt-[20px] font-aeoniklight lg:hidden block text-[18px] leading-[28.8px]">
@@ -125,7 +125,7 @@ const page = () => {
           </p>
         </div>
         <div className="flex flex-col gap-4 mt-[20px] lg:mt-0">
-          <p className="hidden lg:block font-aeoniklight text-[18px] leading-[28.8px]">
+          <p className="hidden lg:block font-aeoniklight text-[16px] leading-[28.8px]">
             A clear list of the client portfolio for ABIODUN DADA & CO.:
           </p>
           {clients.map((client, index) => (
@@ -133,7 +133,7 @@ const page = () => {
               {/* Dot */}
               <span className="w-2 h-2 bg-[#2F2F2F] rounded-full flex-shrink-0"></span>
               {/* Client Name */}
-              <p className="text-[18px] leading-[28.8px] tracking-[-0.5%] text-[#2F2F2F] font-aeoniklight">
+              <p className="text-[16px] leading-[28.8px] tracking-[-0.5%] text-[#2F2F2F] font-aeoniklight">
                 {client}
               </p>
             </div>
@@ -141,7 +141,7 @@ const page = () => {
         </div>
       </motion.div>
       <motion.div variants={itemVariants} className="mt-[100px] md:px-[120px] lg:mt-[120px]">
-        <h2 className="px-[16px] lg:px-0 font-gobold text-[36px] leading-[46.44px] md:w-auto lg:leading-[83.2px] lg:text-[64px] w-[361px]">
+        <h2 className="px-[16px] lg:px-0 font-gobold text-[36px] leading-[46.44px] md:w-auto lg:leading-[83.2px] lg:text-[44px] w-[361px]">
           INSIDE ABIODUN DADA & CO.
         </h2>
         <div className="mt-[40px] mx-auto lg:hidden block">

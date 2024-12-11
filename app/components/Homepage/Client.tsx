@@ -32,7 +32,7 @@ const Client = () => {
     >
       {/* Section Header */}
       <div className="md:text-center mb-6">
-        <h2 className="font-gobold md:text-[36px] md:leading-[58.4px] text-[32px] leading-[44.8px]">
+        <h2 className="font-gobold md:text-[34px] md:leading-[58.4px] text-[32px] leading-[44.8px]">
           Client Portfolio
         </h2>
       </div>
@@ -44,7 +44,7 @@ const Client = () => {
             {/* Dot */}
             <span className="w-2 h-2 bg-[#2F2F2F] rounded-full flex-shrink-0"></span>
             {/* Client Name */}
-            <p className="text-[18px] leading-[28.8px] tracking-[-0.5%] text-[#2F2F2F] font-aeoniklight">
+            <p className="text-[16px] leading-[28.8px] tracking-[-0.5%] text-[#2F2F2F] font-aeoniklight">
               {client}
             </p>
           </div>
