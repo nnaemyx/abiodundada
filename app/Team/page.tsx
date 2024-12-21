@@ -367,72 +367,6 @@ const Page = () => {
             <div className="flex flex-col lg:flex-row lg:gap-[40px] lg:items-center">
               <div>
                 <Image
-                  src={Samuel}
-                  alt="Samuel's image"
-                  className="lg:rounded-[12px] "
-                />
-              </div>
-              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
-                <div>
-                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
-                    SAMUEL IYANU OLA, ESQ.
-                  </h2>
-                  <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
-                    Advocate
-                  </p>
-                </div>
-                <div className="mt-[32px]">
-                  <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
-                    SAMUEL IYANU OLA, ESQ., attended the University of Ilorin
-                    from 2010 to 2015, where he completed his Bachelor of Laws
-                    (LL.B.) degree. To meet the requirements for legal practice
-                    in Nigeria, he proceeded to the Nigerian Law School, Kano
-                    Campus, where he earned his Barrister at Law (B.L.)
-                    qualification and was called to the Nigerian Bar on November
-                    31, 2016. He completed his National Youth Service Corps
-                    (NYSC) program in Oyo State in 2017.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row-reverse lg:gap-[40px] lg:items-center">
-              <div>
-                <Image
-                  src={Grace}
-                  alt="Samuel's image"
-                  className="lg:rounded-[12px] "
-                />
-              </div>
-              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
-                <div>
-                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
-                    ADEBAYO, GRACE OLUWAFUNMIBI, ESQ.
-                  </h2>
-                  <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
-                    Advocate
-                  </p>
-                </div>
-                <div className="mt-[32px]">
-                  <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
-                    ADEBAYO, GRACE OLUWAFUNMIBI, ESQ., attended Ekiti State
-                    University, Ado-Ekiti, from 2006 to 2012, where she earned
-                    her Bachelor of Laws (LL.B.) degree. To fulfil the
-                    requirements for legal practice in Nigeria, she attended the
-                    Nigerian Law School, obtained her Barrister at Law (B.L.)
-                    qualification, and was called to the Nigerian Bar on
-                    November 28, 2013. Pursuing further academic excellence,
-                    Barrister Adebayo also attended the University of Ibadan
-                    from 2015 to 2016, where she completed her Master of Laws
-                    (LL.M) degree.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row lg:gap-[40px] lg:items-center">
-              <div>
-                <Image
                   src={Abdulrazaq}
                   alt="Abdulrazaq's image"
                   className="lg:rounded-[12px] "
@@ -478,38 +412,6 @@ const Page = () => {
             <div className="flex flex-col lg:flex-row-reverse lg:gap-[40px] lg:items-center">
               <div>
                 <Image
-                  src={Zeenat}
-                  alt="Zeenat's image"
-                  className="lg:rounded-[12px] "
-                />
-              </div>
-              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
-                <div>
-                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
-                    ZEENAT ZAKARI, ESQ.
-                  </h2>
-                  <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
-                    Advocate
-                  </p>
-                </div>
-                <div className="mt-[32px]">
-                  <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
-                    ZEENAT ZAKARI, ESQ., is a skilled and dedicated legal
-                    practitioner who graduated from Bayero University, Kano,
-                    with a Second Class Lower degree. She successfully completed
-                    the Nigerian Law School program in 2023 and was called to
-                    the Bar the same year. She fulfilled her National Youth
-                    Service Corps (NYSC) in 2023 at a private law firm in Osun
-                    State. Zeenat has a strong interest in litigation, real
-                    estate, and commercial practice.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row lg:gap-[40px] lg:items-center">
-              <div>
-                <Image
                   src={Femi}
                   alt="Femi's image"
                   className="lg:rounded-[12px] lg:max-w-[400px]"
@@ -536,10 +438,73 @@ const Page = () => {
                 </div>
               </div>
             </div>
-
-          
+            <div className="flex flex-col lg:flex-row lg:gap-[40px] lg:items-center">
+              <div>
+                <Image
+                  src={Grace}
+                  alt="Samuel's image"
+                  className="lg:rounded-[12px] "
+                />
+              </div>
+              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
+                <div>
+                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
+                    ADEBAYO, GRACE OLUWAFUNMIBI, ESQ.
+                  </h2>
+                  <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
+                    Advocate
+                  </p>
+                </div>
+                <div className="mt-[32px]">
+                  <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
+                    ADEBAYO, GRACE OLUWAFUNMIBI, ESQ., attended Ekiti State
+                    University, Ado-Ekiti, from 2006 to 2012, where she earned
+                    her Bachelor of Laws (LL.B.) degree. To fulfil the
+                    requirements for legal practice in Nigeria, she attended the
+                    Nigerian Law School, obtained her Barrister at Law (B.L.)
+                    qualification, and was called to the Nigerian Bar on
+                    November 28, 2013. Pursuing further academic excellence,
+                    Barrister Adebayo also attended the University of Ibadan
+                    from 2015 to 2016, where she completed her Master of Laws
+                    (LL.M) degree.
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <div className="flex flex-col lg:flex-row-reverse lg:gap-[40px] lg:items-center">
+              <div>
+                <Image
+                  src={Samuel}
+                  alt="Samuel's image"
+                  className="lg:rounded-[12px] "
+                />
+              </div>
+              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
+                <div>
+                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
+                    SAMUEL IYANU OLA, ESQ.
+                  </h2>
+                  <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
+                    Advocate
+                  </p>
+                </div>
+                <div className="mt-[32px]">
+                  <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
+                    SAMUEL IYANU OLA, ESQ., attended the University of Ilorin
+                    from 2010 to 2015, where he completed his Bachelor of Laws
+                    (LL.B.) degree. To meet the requirements for legal practice
+                    in Nigeria, he proceeded to the Nigerian Law School, Kano
+                    Campus, where he earned his Barrister at Law (B.L.)
+                    qualification and was called to the Nigerian Bar on November
+                    31, 2016. He completed his National Youth Service Corps
+                    (NYSC) program in Oyo State in 2017.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col lg:flex-row lg:gap-[40px] lg:items-center">
               <div>
                 <Image
                   src={Damilola}
@@ -573,6 +538,39 @@ const Page = () => {
                 </div>
               </div>
             </div>
+
+            <div className="flex flex-col lg:flex-row-reverse lg:gap-[40px] lg:items-center">
+              <div>
+                <Image
+                  src={Zeenat}
+                  alt="Zeenat's image"
+                  className="lg:rounded-[12px] "
+                />
+              </div>
+              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
+                <div>
+                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
+                    ZEENAT ZAKARI, ESQ.
+                  </h2>
+                  <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
+                    Advocate
+                  </p>
+                </div>
+                <div className="mt-[32px]">
+                  <p className="text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
+                    ZEENAT ZAKARI, ESQ., is a skilled and dedicated legal
+                    practitioner who graduated from Bayero University, Kano,
+                    with a Second Class Lower degree. She successfully completed
+                    the Nigerian Law School program in 2023 and was called to
+                    the Bar the same year. She fulfilled her National Youth
+                    Service Corps (NYSC) in 2023 at a private law firm in Osun
+                    State. Zeenat has a strong interest in litigation, real
+                    estate, and commercial practice.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <Link href="/">
               <div className="px-[16px] mt-[80px] lg:flex lg:justify-center">
                 <button className="bg-black text-white rounded-[12px] w-full lg:w-[256px] mx-auto py-[16.5px] font-aeonikmedium leading-[19.2px] tracking-[-1%]">

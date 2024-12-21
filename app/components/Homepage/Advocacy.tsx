@@ -112,6 +112,24 @@ const Advocacy = () => {
           <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
+                src={Adzul}
+                alt="babajide image"
+                width={400}
+                height={400}
+              />
+            </div>
+            <div className="mt-[22px] pl-[20px] pb-[20px]">
+              <h2 className="text-[#F5F5F5] font-aeonikmedium text-[18px] leading-[24px] tracking-[-3%]">
+                PROF. ABDULRAZAQ O. ABDULKADIR, PhD
+              </h2>
+              <p className="text-[#ACACAC] mt-[8px] font-aeoniklight text-[16px] leading-[21.6px] tracking-[-1%]">
+                Advocate
+              </p>
+            </div>
+          </div>
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+            <div className="px-[8px] pt-[8px]">
+              <Image
                 src={Babajide}
                 alt="babajide image"
                 width={400}
@@ -127,6 +145,22 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
+          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+            <div className="px-[8px] pt-[8px]">
+              <Image src={Femi} alt="babajide image" width={400} height={400} />
+            </div>
+            <div className="mt-[22px] pl-[20px] pb-[20px]">
+              <h2 className="text-[#F5F5F5] font-aeonikmedium text-[18px] leading-[24px] tracking-[-3%]">
+                Femi Olorunfemi Samuel Segun, Esq.
+              </h2>
+              <p className="text-[#ACACAC] mt-[8px] font-aeoniklight text-[16px] leading-[21.6px] tracking-[-1%]">
+                Advocate
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex md:flex-row flex-col gap-[28px] mt-[64px]">
           <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
@@ -163,9 +197,6 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="flex md:flex-row flex-col gap-[28px] mt-[64px]">
           <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
@@ -184,20 +215,12 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
-            <div className="px-[8px] pt-[8px]">
-              <Image src={Femi} alt="babajide image" width={400} height={400} />
-            </div>
-            <div className="mt-[22px] pl-[20px] pb-[20px]">
-              <h2 className="text-[#F5F5F5] font-aeonikmedium text-[18px] leading-[24px] tracking-[-3%]">
-                Femi Olorunfemi Samuel Segun, Esq.
-              </h2>
-              <p className="text-[#ACACAC] mt-[8px] font-aeoniklight text-[16px] leading-[21.6px] tracking-[-1%]">
-                Advocate
-              </p>
-            </div>
-          </div>
-          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
+
+     
+        </div>
+
+        <div className="flex md:flex-row flex-col gap-[28px] mt-[64px]">
+        <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image
                 src={Zeenat}
@@ -215,28 +238,6 @@ const Advocacy = () => {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="flex md:flex-row flex-col gap-[28px] mt-[64px]">
-          <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
-            <div className="px-[8px] pt-[8px]">
-              <Image
-                src={Adzul}
-                alt="babajide image"
-                width={400}
-                height={400}
-              />
-            </div>
-            <div className="mt-[22px] pl-[20px] pb-[20px]">
-              <h2 className="text-[#F5F5F5] font-aeonikmedium text-[18px] leading-[24px] tracking-[-3%]">
-                PROF. ABDULRAZAQ O. ABDULKADIR, PhD
-              </h2>
-              <p className="text-[#ACACAC] mt-[8px] font-aeoniklight text-[16px] leading-[21.6px] tracking-[-1%]">
-                Advocate
-              </p>
-            </div>
-          </div>
-
           <div className="bg-[#111113] border border-solid border-[#141414] rounded-[12px] max-w-[416px] mx-auto">
             <div className="px-[8px] pt-[8px]">
               <Image

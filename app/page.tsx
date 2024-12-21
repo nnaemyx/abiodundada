@@ -7,7 +7,7 @@ import AnimatedText from "@/utils/AnimatedText";
 import Aboutus from "../app/images/Hero Section.png";
 import CTO from "../app/images/Contact or CTA.png";
 import MobileCTO from "../app/images/Mobile Contact or CTA.png";
-import CEO from "./images/Frame 2087328337.png";
+import CEO from "./images/Picture changes/Desktop.png";
 import Babajide from "./images/Frame 2087328346.png";
 import Femi from "./images/Frame 2087328348.png";
 import Samuel from "./images/Frame 2087328346-1.png";
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
         <p className="font-aeoniklight tracking-[-3%] lg:tracking-[-1%] lg:max-w-[591px] mx-auto text-[#595959] leading-[28.8px] lg:leading-[27px] mt-[16px] text-center font-[400] lg:text-[16px]">
           With a steadfast dedication to integrity and client-centered advocacy,
-          we provide the support and counsel you need to navigate today’s legal
+          we provide the support and counsel you require to navigate today’s legal
           landscape.
         </p>
         <Link href="/Contactus">
