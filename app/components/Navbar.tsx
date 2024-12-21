@@ -108,7 +108,7 @@ const Navbar = () => {
         >
           <Link href="/Contactus">
             <div className="items-center py-[14.5px] px-[28px] rounded-[1000px] bg-black text-white">
-              <p className="text-white font-aeonikmedium leading-[19.2px]">
+              <p className="text-white text-[14px] font-aeonikmedium leading-[19.2px]">
                 Schedule a call
               </p>
             </div>
