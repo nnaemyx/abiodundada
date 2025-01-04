@@ -50,7 +50,7 @@ const Navbar = () => {
     <>
       {/* Navbar */}
       <div
-        className={`lg:px-[68px] px-[20px] lg:py-[24px] py-[13px] w-full flex justify-between lg:justify-center items-center gap-[16px] sticky top-0 z-50 shadow-sm transition-colors duration-300 ${
+        className={`lg:px-[68px] px-[20px] lg:py-[24px] py-[13px] w-full flex justify-between lg:justify-center items-center gap-[16px] sticky top-0 z-50 transition-colors duration-300 ${
           isScrolled ? "bg-transparent" : "bg-white"
         }`}
       >

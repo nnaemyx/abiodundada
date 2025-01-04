@@ -123,7 +123,7 @@ const Advocacy = () => {
                 PROF. ABDULRAZAQ O. ABDULKADIR, PhD
               </h2>
               <p className="text-[#ACACAC] mt-[8px] font-aeoniklight text-[16px] leading-[21.6px] tracking-[-1%]">
-                Advocate
+                Associate
               </p>
             </div>
           </div>

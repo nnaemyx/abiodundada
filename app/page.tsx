@@ -7,13 +7,14 @@ import AnimatedText from "@/utils/AnimatedText";
 import Aboutus from "../app/images/Hero Section.png";
 import CTO from "../app/images/Contact or CTA.png";
 import MobileCTO from "../app/images/Mobile Contact or CTA.png";
-import CEO from "./images/Picture changes/Desktop.png";
-import Babajide from "./images/Frame 2087328346.png";
-import Femi from "./images/Frame 2087328348.png";
-import Samuel from "./images/Frame 2087328346-1.png";
-import Grace from "./images/Frame 2087328345.png";
-import Zeenat from "./images/Frame 2087328347.png";
-import Damilola from "./images/Frame 2087328347-1.png";
+import CEO from "./images/New grid for desktop/New grid for desktop/Frame 2087328653.png";
+import Abdul from "./images/New grid for desktop/New grid for desktop/Frame 2087328654.png";
+import Babajide from "./images/New grid for desktop/New grid for desktop/Frame 2087328655.png";
+import Femi from "./images/New grid for desktop/New grid for desktop/Frame 2087328656.png";
+import Samuel from "./images/New grid for desktop/New grid for desktop/Frame 2087328654-1.png";
+import Grace from "./images/New grid for desktop/New grid for desktop/Frame 2087328653-1.png";
+import Zeenat from "./images/New grid for desktop/New grid for desktop/Frame 2087328656-1.png";
+import Damilola from "./images/New grid for desktop/New grid for desktop/Frame 2087328655-1.png";
 import Advocacy from "./components/Homepage/Advocacy";
 import Client from "./components/Homepage/Client";
 import ContactForm from "./components/Homepage/ContactForm";
@@ -80,8 +81,8 @@ export default function Home() {
         </div>
         <p className="font-aeoniklight tracking-[-3%] lg:tracking-[-1%] lg:max-w-[591px] mx-auto text-[#595959] leading-[28.8px] lg:leading-[27px] mt-[16px] text-center font-[400] lg:text-[16px]">
           With a steadfast dedication to integrity and client-centered advocacy,
-          we provide the support and counsel you require to navigate today’s legal
-          landscape.
+          we provide the support and counsel you require to navigate today’s
+          legal landscape.
         </p>
         <Link href="/Contactus">
           <button className="rounded-[12px] w-full lg:w-auto bg-black text-white py-[14.5px] px-[28px] font-aeonikmedium leading-[19.2px] mx-auto justify-center flex mt-[24px]">
@@ -102,44 +103,36 @@ export default function Home() {
           whileInView="visible"
           transition={{ duration: 0.8 }}
           variants={scrollAnimation}
-          className="flex flex-col lg:flex-row gap-4 justify-center lg:gap-[16px] items-center lg:items-start"
+          className=""
         >
-          {/* CEO Image */}
-          <div className="">
-            <Image src={CEO} alt="founder picture" className="w-full lg:max-w-[560px] lg:h-[670px] h-auto" />
-          </div>
-
           {/* Grid of Smaller Images */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-[16px]">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-[16px]">
+            <Image src={CEO} alt="founder picture" />
+            <Image src={Abdul} alt="founder picture" />
             <Image
               src={Babajide}
               alt="founder picture"
-              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
-            />
-            <Image
-              src={Zeenat}
-              alt="founder picture"
-              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
             />
             <Image
               src={Femi}
               alt="founder picture"
-              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
             />
             <Image
               src={Grace}
               alt="founder picture"
-              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
             />
+
             <Image
               src={Samuel}
               alt="founder picture"
-              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
             />
             <Image
               src={Damilola}
               alt="founder picture"
-              className="w-full h-auto lg:h-[327px] lg:max-w-[232px]"
+            />
+            <Image
+              src={Zeenat}
+              alt="founder picture"
             />
           </div>
         </motion.div>

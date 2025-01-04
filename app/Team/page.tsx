@@ -316,6 +316,56 @@ const Page = () => {
           </div>
         </div>
 
+        <div className="mt-[120px]">
+          <div className="flex flex-col lg:flex-row lg:gap-[40px] lg:items-center">
+            <h1 className="text-[32px] px-[16px] text-[#000000] lg:hidden font-gobold leading-[41.28px]">
+              ASSOCIATE
+            </h1>
+            <div className="mt-[40px] lg:mt-0">
+              <Image
+                src={Abdulrazaq}
+                alt="Abdulrazaq's image"
+                className="lg:rounded-[12px] "
+              />
+            </div>
+            <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[625px]">
+              <div>
+                <h1 className="text-[46px] text-[#222723] lg:block hidden font-gobold leading-[72.24px]">
+                  ASSOCIATE
+                </h1>
+                <h2 className="text-[#1A1A1A] mt-[20px] lg:mt-[32px] font-aeonikmedium text-[18px] lg:text-[32px] lg:leading-[38.4px] tracking-[-2%]">
+                  PROF. ABDULRAZAQ O. ABDULKADIR, PhD
+                </h2>
+              </div>
+              <div className="mt-[12px] space-y-[20px] text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
+                <p>
+                  Prof. Abdulrazaq O. Abdulkadir, PhD, is a Barrister and
+                  Solicitor of the Supreme Court of Nigeria. He graduated from
+                  the University of Ilorin in 2004 with a Second Class Upper
+                  Division and proceeded to the Nigerian Law School, where he
+                  completed his Bar Part II examination with the same
+                  distinction, earning a Second Class Upper Division. He was
+                  called to the Nigerian Bar on November 7, 2006.
+                </p>
+                <p>
+                  Prof. Abdulkadir furthered his education at Obafemi Awolowo
+                  University, Ile-Ife, where he obtained a Master of Laws
+                  (LL.M). He later earned his PhD in Law from the International
+                  Islamic University Malaysia (IIUM) in January 2014.
+                </p>
+                <p>
+                  In 2010, Prof. Abdulkadir joined the law firm of Abiodun Dada
+                  & Co., where he gained extensive experience in civil,
+                  criminal, and election litigation. His passion for litigation
+                  has seen him actively involved in numerous cases, ranging from
+                  trial courts to the Supreme Court of Nigeria, demonstrating
+                  his dedication to the legal profession.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="mt-[100px] lg:mt-[120px]">
           <h2 className="font-gobold text-[32px] lg:text-[36px] lg:leading-[72.24px] leading-[41.28px] lg:px-0 px-[16px]">
             HEAD OF CHAMBERS
@@ -360,55 +410,10 @@ const Page = () => {
         </div>
 
         <div className="mt-[100px] lg:mt-[120px] mb-[126px]">
-          <h2 className="px-[16px] lg:hidden font-gobold text-[32px] leading-[41.28px]">
+          <h2 className="px-[16px] lg:px-0 font-gobold lg:text-[42px] text-[32px] lg:leading-[72.24px] leading-[41.28px]">
             OTHER ADVOCATES
           </h2>
           <div className="space-y-[80px] lg:space-y-[120px] mt-[40px] lg:mt-0">
-            <div className="flex flex-col lg:flex-row lg:gap-[40px] lg:items-center">
-              <div>
-                <Image
-                  src={Abdulrazaq}
-                  alt="Abdulrazaq's image"
-                  className="lg:rounded-[12px] "
-                />
-              </div>
-              <div className="px-[16px] lg:px-0 lg:mt-0 mt-[20px] lg:max-w-[660px]">
-                <div>
-                  <h2 className="text-[#1A1A1A] font-aeonikmedium text-[16px] leading-[21.6px] tracking-[-2%]">
-                    PROF. ABDULRAZAQ O. ABDULKADIR, PhD
-                  </h2>
-                  <p className="mt-[12px] text-[#595959] font-aeoniklight leading-[19.2px] tracking-[-1%]">
-                    Advocate
-                  </p>
-                </div>
-                <div className="mt-[32px] space-y-[20px] text-[#2F2F2F] font-aeoniklight text-[16px] leading-[28.8px] tracking-[-0.5%]">
-                  <p>
-                    Prof. Abdulrazaq O. Abdulkadir, PhD, is a Barrister and
-                    Solicitor of the Supreme Court of Nigeria. He graduated from
-                    the University of Ilorin in 2004 with a Second Class Upper
-                    Division and proceeded to the Nigerian Law School, where he
-                    completed his Bar Part II examination with the same
-                    distinction, earning a Second Class Upper Division. He was
-                    called to the Nigerian Bar on November 7, 2006.
-                  </p>
-                  <p>
-                    Prof. Abdulkadir furthered his education at Obafemi Awolowo
-                    University, Ile-Ife, where he obtained a Master of Laws
-                    (LL.M). He later earned his PhD in Law from the
-                    International Islamic University Malaysia (IIUM) in January
-                    2014.
-                  </p>
-                  <p>
-                    In 2010, Prof. Abdulkadir joined the law firm of Abiodun
-                    Dada & Co., where he gained extensive experience in civil,
-                    criminal, and election litigation. His passion for
-                    litigation has seen him actively involved in numerous cases,
-                    ranging from trial courts to the Supreme Court of Nigeria,
-                    demonstrating his dedication to the legal profession.
-                  </p>
-                </div>
-              </div>
-            </div>
             <div className="flex flex-col lg:flex-row-reverse lg:gap-[40px] lg:items-center">
               <div>
                 <Image

@@ -16,13 +16,13 @@ const Footer = () => {
             </p>
           </div>
           <div className="text-[#F2F2F2] mt-[20px]  lg:mt-[40px] lg:ml-[160px] max-w-[500px] font-aeoniklight text-[14px] lg:text-[16px] leading-[28.8px]">
-            <p>
-              Suite 36 and 37, 2nd Floor, Yasuha Plaza (Behind AP Plaza) Plot
-              1046, Adetokunbo Ademola Crescent, Wuse II, Abuja.
-            </p>
             <p className="mt-[20px] lg:mt-[40px]">
               Temitope Chambers, Temitope House, No. 8, Venerable Adefila
               Street, Lajorin, G.R.A., Ilorin, Kwara State of Nigeria.
+            </p>
+            <p>
+              Suite 36 and 37, 2nd Floor, Yasuha Plaza (Behind AP Plaza) Plot
+              1046, Adetokunbo Ademola Crescent, Wuse II, Abuja.
             </p>
           </div>
         </div>
@@ -66,9 +66,24 @@ const Footer = () => {
             </div>
             <div className="text-[#F2F2F2] mt-[20px] lg:mt-[40px] lg:ml-[144px] font-aeoniklight text-[14px] lg:text-[16px]">
               <ul className="space-y-[16px] lg:space-y-[24px] leading-[19.2px]">
-                <li>Twitter/X</li>
-                <li>Instagram</li>
-                <li>Email</li>
+                <a href="https://x.com/lawtemitope?s=09" target="_blank">
+                  <li className="mt-[16px] lg:mt-[24px]">Twitter/X</li>
+                </a>
+                <a
+                  href="https://www.instagram.com/law_temitope/profilecard/?igsh=dDhqeHVmMDVsNWZp"
+                  target="_blank"
+                >
+                  <li className="mt-[16px] lg:mt-[24px]">Instagram</li>
+                </a>
+                <a href="lawtemitope@gmail.com" target="_blank">
+                  <li className="mt-[16px] lg:mt-[24px]">Email</li>
+                </a>
+                <a
+                  href="https://m.facebook.com/profile.php?id=61571127236657&name=xhp_nt_"
+                  target="_blank"
+                >
+                  <li className="mt-[16px] lg:mt-[24px]">Facebook</li>
+                </a>
                 <li>Phone Number</li>
               </ul>
             </div>
@@ -103,13 +118,23 @@ const Footer = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="text-center lg:text-end flex flex-col items-center lg:items-end mt-[100.43px] lg:mt-0 ml-auto mr-[30px] lg:mr-[60px]">
-        <p className="text-[#666666] font-aeoniklight leading-[19.2px]">
-          Contact Us
-        </p>
-        <h2 className="text-[#F2F2F2] font-aeoniklight leading-[21.6px] tracking-[-1%]">
-          lawtemitope@gmail.com
-        </h2>
+      <div className="text-center lg:text-start flex lg:flex-row flex-col space-y-[40px] justify-between items-center lg:items-end mt-[100.43px] lg:mt-0 ml-auto mr-[30px] lg:ml-[60px] lg:mr-[60px]">
+        <div>
+          <p className="text-[#666666] font-aeoniklight leading-[19.2px]">
+            Visit our website:
+          </p>
+          <h2 className="text-[#F2F2F2] font-aeoniklight leading-[21.6px] tracking-[-1%]">
+            www.abiodundadaandco.com
+          </h2>
+        </div>
+        <div>
+          <p className="text-[#666666] font-aeoniklight leading-[19.2px]">
+            Contact Us
+          </p>
+          <h2 className="text-[#F2F2F2] font-aeoniklight leading-[21.6px] tracking-[-1%]">
+            lawtemitope@gmail.com
+          </h2>
+        </div>
       </div>
     </div>
   );
