@@ -152,7 +152,7 @@ const Navbar = () => {
             </div>
           </div>
           <nav className="mt-[22px] px-[16px]">
-            <ul className="font-aeoniklight text-[#2F2F2F] leadng-[26.4px] text-[22px]">
+            <ul className="font-aeoniklight text-[#2F2F2F] leadng-[26.4px] text-[18px]">
               {navItems.map((item) => (
                 <Link key={item.name} href={item.path}>
                   <li className="flex justify-between items-center mt-[33px]">
