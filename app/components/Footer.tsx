@@ -104,13 +104,13 @@ const Footer = () => {
           </h2>
           <p className="mt-[16px] lg:mt-[20px] text-[#858585] text-[14px] lg:text-[18px] leading-[28.8px] tracking-[-1%] font-aeonik-light max-w-[363px] mx-auto lg:max-w-[641px]">
             Delivering exceptional{" "}
-            <span className="font-aeonikmedium text-[#F5F5F5]">
+            <span className="font-inter text-[#F5F5F5]">
               legal solutions
             </span>{" "}
             with unwavering{" "}
-            <span className="font-aeonikmedium text-[#F5F5F5]">commitment</span>{" "}
+            <span className="font-inter text-[#F5F5F5]">commitment</span>{" "}
             to{" "}
-            <span className="font-aeonikmedium text-[#F5F5F5]">
+            <span className="font-inter text-[#F5F5F5]">
               excellence!!!
             </span>
           </p>
@@ -123,17 +123,17 @@ const Footer = () => {
           <p className="text-[#666666] font-aeoniklight leading-[19.2px]">
             Visit our website:
           </p>
-          <h2 className="text-[#F2F2F2] font-aeoniklight leading-[21.6px] tracking-[-1%]">
+          <p className="text-[#F2F2F2] font-aeoniklight leading-[21.6px] tracking-[-1%]">
             www.abiodundadaandco.com
-          </h2>
+          </p>
         </div>
         <div>
           <p className="text-[#666666] font-aeoniklight leading-[19.2px]">
             Contact Us
           </p>
-          <h2 className="text-[#F2F2F2] font-aeoniklight leading-[21.6px] tracking-[-1%]">
+          <p className="text-[#F2F2F2] font-aeoniklight leading-[21.6px] tracking-[-1%]">
             lawtemitope@gmail.com
-          </h2>
+          </p>
         </div>
       </div>
     </div>

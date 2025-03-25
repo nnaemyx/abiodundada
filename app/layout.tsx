@@ -17,6 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link href="https://fonts.cdnfonts.com/css/gobold" rel="stylesheet" />
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}

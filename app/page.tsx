@@ -50,7 +50,7 @@ const AnimatedNumbers: React.FC<AnimatedNumbersProps> = ({
   return (
     <span
       ref={ref}
-      className={` ${className}`} // Example TailwindCSS styles
+      className={`gobold-font ${className}`} // Example TailwindCSS styles
     ></span>
   );
 };
@@ -72,14 +72,14 @@ export default function Home() {
         <div className="lg:mt-[90px] mt-[60px] text-center">
           <AnimatedText
             text="YOUR LEGAL PARTNERS IN "
-            className="font-bold text-black md:text-[76px] lg:text-[66px] lg:leading-[86.4px] text-[30px] max-w-full mx-auto leading-[54px] md:leading-[106.4px]"
+            className="font-bold text-black md:text-[76px] lg:text-[66px] lg:leading-[140%] lg:tracking-[0%] text-[25px] max-w-full mx-auto leading-[150%] md:leading-[106.4px]"
           />
           <AnimatedText
             text="JUSTICE AND RESOLUTION "
-            className="font-bold text-black md:text-[76px] lg:text-[66px] lg:leading-[86.4px] text-[30px] max-w-full mx-auto leading-[54px] md:leading-[106.4px]"
+            className="font-bold text-black md:text-[76px] lg:text-[66px] lg:leading-[140%] lg:tracking-[0%] text-[25px] max-w-full mx-auto leading-[150%] md:leading-[106.4px]"
           />
         </div>
-        <p className="font-aeoniklight tracking-[-3%] lg:tracking-[-1%] lg:max-w-[591px] mx-auto text-[#595959] leading-[28.8px] lg:leading-[27px] mt-[16px] text-center font-[400] lg:text-[16px]">
+        <p className="tracking-[-3%] lg:tracking-[-1%] lg:max-w-[591px] mx-auto text-[#595959] leading-[28.8px] lg:leading-[27px] mt-[16px] text-center font-[400] lg:text-[16px]">
           With a steadfast dedication to integrity and client-centered advocacy,
           we provide the support and counsel you require to navigate today’s
           legal landscape.

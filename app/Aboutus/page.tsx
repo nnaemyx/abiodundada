@@ -55,9 +55,9 @@ const page = () => {
         className="mt-[60px] lg:px-[120px] px-[16px]"
         variants={itemVariants}
       >
-        <p className="font-gobold text-[36px] lg:leading-[83.2px] lg:text-[44px] leading-[46.44px]">
+        <h2 className="font-gobold text-[36px] lg:leading-[83.2px] lg:text-[44px] leading-[46.44px]">
           FIRM PROFILE
-        </p>
+        </h2>
       </motion.div>
 
       {/* Hero Image */}
